@@ -11,25 +11,25 @@ const products = [
   {
     name: "Live Birds",
     image: liveBirds,
-    description: "Healthy broilers and layers raised for maximum profit, perfect for bulk buying and retailing purposes.",
+    description: "Healthy broilers and layers raised under structured feeding and vaccination programs.",
     alt: "Live chickens on the farm",
   },
   {
     name: "Table Eggs",
     image: tableEggs,
-    description: "Fresh eggs daily for the biggest markets directly from our hatch, guaranteed fresh.",
+    description: "Fresh, hygienically handled eggs collected daily and properly graded.",
     alt: "Fresh farm eggs in a basket",
   },
   {
     name: "Swine",
     image: swine,
-    description: "Well-managed pigs raised in modern, humane housing for both breeding and meat production needs.",
+    description: "Well-managed pigs raised in controlled housing with balanced nutrition.",
     alt: "Pigs on the farm",
   },
   {
     name: "Exotic Birds",
     image: exoticBirds,
-    description: "Ducks, geese, and other exotic poultry raised with care for diverse markets and needs.",
+    description: "Carefully bred exotic birds maintained in clean, stress-free environments.",
     alt: "Exotic ducks and geese on the farm",
   },
   {
@@ -63,11 +63,11 @@ const WhatWeDo = () => {
     <section id="products" className="py-16 md:py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             What We Do?
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto text-sm">
-            We raise and manage all these types of Livestock and Poultry, available in every form to meet the needs you may have.
+          <p className="text-muted-foreground max-w-2xl mx-auto text-sm md:text-base">
+            We raise and manage a diverse range of poultry and livestock, carefully monitored to meet industry standards.
           </p>
         </div>
 
@@ -82,16 +82,16 @@ const WhatWeDo = () => {
                   loading="lazy"
                 />
               </div>
-              <div className="p-4">
-                <h3 className="font-sans font-semibold text-foreground text-sm mb-1">
+              <div className="p-5">
+                <h3 className="font-sans font-semibold text-foreground text-base mb-2">
                   {product.name}
                 </h3>
-                <p className="text-xs text-muted-foreground mb-3 leading-relaxed">
+                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
                   {product.description}
                 </p>
                 <a
                   href="#"
-                  className="inline-block text-xs font-semibold text-farm-orange border border-farm-orange px-4 py-1.5 rounded-full hover:bg-farm-orange hover:text-primary-foreground transition-colors"
+                  className="inline-block text-sm font-semibold text-farm-orange border border-farm-orange px-5 py-2 rounded-full hover:bg-farm-orange hover:text-primary-foreground transition-colors"
                 >
                   View More
                 </a>

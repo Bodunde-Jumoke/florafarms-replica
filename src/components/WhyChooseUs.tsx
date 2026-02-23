@@ -9,23 +9,21 @@ const WhyChooseUs = () => {
           <div className="rounded-2xl overflow-hidden">
             <img
               src={whyChooseImg}
-              alt="Farmer caring for livestock and poultry on the farm"
-              className="w-full h-[400px] lg:h-[500px] object-cover"
+              alt="FloraFarms team members standing together"
+              className="w-full h-[400px] lg:h-[550px] object-cover"
             />
           </div>
 
           {/* Text */}
           <div>
-            <span className="inline-block bg-farm-orange/10 text-farm-orange text-xs font-semibold px-4 py-1.5 rounded-full mb-4">
+            <span className="inline-block border border-foreground/30 text-foreground text-sm font-medium px-5 py-2 rounded-full mb-6">
               Why Choose Us?
             </span>
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6 leading-tight">
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 leading-tight">
               Experience the Best with Our Livestock and Poultry Farm.
             </h2>
-            <p className="text-muted-foreground text-sm leading-relaxed mb-8">
-              We guarantee you the best livestock and poultry, from healthy free-range breeds to quality eggs, all of
-              our farm and delivers all the assurance you need. Our expert teams and modern equipment support our mission
-              to consistently produce top quality livestock for both local and commercial enterprises.
+            <p className="text-muted-foreground text-sm md:text-base leading-relaxed mb-8">
+              We operate as a structured private agricultural enterprise focused on consistency, animal welfare, and professional farm management. Our systems are designed to support reliable livestock and poultry production under Nigerian farming conditions.
             </p>
             <a
               href="#about"

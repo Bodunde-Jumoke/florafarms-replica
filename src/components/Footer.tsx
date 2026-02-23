@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail } from "lucide-react";
+import { MapPin, Phone, Mail, Facebook } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const Footer = () => {
@@ -8,24 +8,21 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <img src={logo} alt="FloraFarms logo" className="h-10 w-10 rounded-full object-cover" />
-              <span className="font-display font-bold text-lg">
-                Flora<span className="text-farm-orange">Farms</span>
-              </span>
+            <div className="mb-4">
+              <img src={logo} alt="FloraFarms Poultry logo" className="h-20 w-20 rounded-lg object-cover" />
             </div>
-            <p className="text-primary-foreground/60 text-xs leading-relaxed">
-              FloraFarms is a top-tier provider of livestock and poultry, producing quality products for our customers.
+            <p className="text-primary-foreground/70 text-sm leading-relaxed">
+              we are dedicated to providing the highest quality livestock and poultry products to our customers.
             </p>
           </div>
 
           {/* Our Products */}
           <div>
-            <h3 className="font-sans font-semibold text-sm mb-4">Our Products</h3>
-            <ul className="space-y-2">
-              {["Live Birds", "Table Eggs", "Swine", "Ornamental Birds", "Point of Lay", "Rams", "Snails"].map((item) => (
+            <h3 className="font-sans font-semibold text-base mb-5">Our Products</h3>
+            <ul className="space-y-3">
+              {["Live Birds", "Table Eggs", "Swine", "Ornamental Birds", "Point of Lay", "Ram", "Goats"].map((item) => (
                 <li key={item}>
-                  <a href="#products" className="text-primary-foreground/60 text-xs hover:text-farm-orange transition-colors">
+                  <a href="#products" className="text-primary-foreground/70 text-sm hover:text-farm-orange transition-colors">
                     {item}
                   </a>
                 </li>
@@ -33,14 +30,19 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Useful Links */}
+          {/* Further Links */}
           <div>
-            <h3 className="font-sans font-semibold text-sm mb-4">Useful Links</h3>
-            <ul className="space-y-2">
-              {["Home", "About Us", "Our Products", "Gallery"].map((item) => (
-                <li key={item}>
-                  <a href="#" className="text-primary-foreground/60 text-xs hover:text-farm-orange transition-colors">
-                    {item}
+            <h3 className="font-sans font-semibold text-base mb-5">Further Links</h3>
+            <ul className="space-y-3">
+              {[
+                { label: "Home", href: "#" },
+                { label: "About Us", href: "#about" },
+                { label: "Our Products", href: "#products" },
+                { label: "Gallery", href: "#gallery" },
+              ].map((item) => (
+                <li key={item.label}>
+                  <a href={item.href} className="text-primary-foreground/70 text-sm hover:text-farm-orange transition-colors">
+                    {item.label}
                   </a>
                 </li>
               ))}
@@ -49,27 +51,34 @@ const Footer = () => {
 
           {/* Get In Touch */}
           <div>
-            <h3 className="font-sans font-semibold text-sm mb-4">Get In Touch</h3>
-            <ul className="space-y-3">
-              <li className="flex items-start gap-2">
-                <MapPin className="h-4 w-4 text-farm-orange shrink-0 mt-0.5" />
-                <span className="text-primary-foreground/60 text-xs">1/8 of Omi Road, Janklo, Bassa Farm</span>
+            <h3 className="font-sans font-semibold text-base mb-5">Get in Touch</h3>
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3">
+                <MapPin className="h-5 w-5 text-farm-orange shrink-0 mt-0.5" />
+                <span className="text-primary-foreground/70 text-sm">Behind Ave Maria Villa, Ijurin Ekiti</span>
               </li>
-              <li className="flex items-start gap-2">
-                <Phone className="h-4 w-4 text-farm-orange shrink-0 mt-0.5" />
-                <span className="text-primary-foreground/60 text-xs">+234 801 234 5678</span>
+              <li className="flex items-start gap-3">
+                <Facebook className="h-5 w-5 text-farm-orange shrink-0 mt-0.5" />
+                <span className="text-primary-foreground/70 text-sm">Flora Farms</span>
               </li>
-              <li className="flex items-start gap-2">
-                <Mail className="h-4 w-4 text-farm-orange shrink-0 mt-0.5" />
-                <span className="text-primary-foreground/60 text-xs">info@florafarms.com</span>
+              <li className="flex items-start gap-3">
+                <Phone className="h-5 w-5 text-farm-orange shrink-0 mt-0.5" />
+                <span className="text-primary-foreground/70 text-sm">080 6673 2200</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Mail className="h-5 w-5 text-farm-orange shrink-0 mt-0.5" />
+                <span className="text-primary-foreground/70 text-sm">Florafarmsijurin@gmail.com</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-primary-foreground/10 mt-10 pt-6 text-center">
-          <p className="text-primary-foreground/40 text-xs">
-            © {new Date().getFullYear()} FloraFarms. All Rights Reserved. Designed by FloraFarms.
+          <p className="text-primary-foreground/50 text-sm">
+            © 2023 All rights Reserved, Flora Frams
+          </p>
+          <p className="text-primary-foreground/50 text-sm">
+            designed by COVY
           </p>
         </div>
       </div>
