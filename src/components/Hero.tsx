@@ -1,4 +1,4 @@
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBg from "@/assets/hero-bg.png";
 
 const Hero = () => {
   return (
@@ -19,7 +19,7 @@ const Hero = () => {
             Commercial Livestock and Poultry Farm
           </h1>
           <p className="text-primary-foreground/70 text-lg mb-2 font-medium">
-            Janklo Road, Nigeria
+            Ijurin, Nigeria
           </p>
           <p className="text-primary-foreground/60 text-sm mb-8 max-w-md">
             Delivering trusted livestock and poultry that thrive in every condition, ensuring unmatched quality and productivity.
