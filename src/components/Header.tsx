@@ -3,7 +3,7 @@ import { Menu, X, Phone } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const navLinks = [
-  { label: "HOME", href: "#", active: true },
+  { label: "HOME", href: "#" },
   { label: "ABOUT US", href: "#about" },
   { label: "OUR PRODUCTS", href: "#products" },
   { label: "GALLERY", href: "#gallery" },
@@ -18,39 +18,39 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 shrink-0">
-            <img src={logo} alt="FloraFarms Poultry logo" className="h-10 w-10 rounded-full object-cover" />
-            <span className="text-primary-foreground font-display font-bold text-lg hidden sm:block">
-              Flora<span className="text-farm-orange">Farms</span>
-            </span>
+          <a href="#" className="flex items-center shrink-0">
+            <img src={logo} alt="FloraFarms Poultry logo" className="h-14 w-14 md:h-16 md:w-16 rounded-lg object-cover" />
           </a>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className={`text-sm font-medium transition-colors ${
-                  link.active
-                    ? "text-farm-orange"
-                    : "text-primary-foreground/80 hover:text-farm-orange"
-                }`}
-              >
-                {link.label}
-              </a>
+          <nav className="hidden lg:flex items-center gap-2">
+            {navLinks.map((link, index) => (
+              <div key={link.label} className="flex items-center gap-2">
+                <a
+                  href={link.href}
+                  className="text-sm font-medium text-primary-foreground/90 hover:text-farm-orange transition-colors"
+                >
+                  {link.label}
+                </a>
+                {index < navLinks.length - 1 && (
+                  <span className="w-2 h-2 rounded-full bg-farm-orange" />
+                )}
+              </div>
             ))}
           </nav>
 
           {/* Right side */}
-          <div className="hidden lg:flex items-center gap-4">
-            <a href="tel:+2348012345678" className="flex items-center gap-2 text-primary-foreground/80 text-sm">
-              <Phone className="h-4 w-4" />
-              <span>Call Us: +234 801 234 5678</span>
+          <div className="hidden lg:flex items-center gap-6">
+            <a href="tel:+2348124564892" className="flex items-center gap-3 text-primary-foreground">
+              <Phone className="h-5 w-5" />
+              <div className="flex flex-col">
+                <span className="text-xs text-primary-foreground/70">Call us Now</span>
+                <span className="text-sm font-semibold">+234 8124564892</span>
+              </div>
             </a>
             <a
               href="#products"
-              className="bg-farm-orange hover:bg-farm-orange-hover text-primary-foreground px-5 py-2.5 rounded-full text-sm font-semibold transition-colors"
+              className="bg-farm-orange hover:bg-farm-orange-hover text-primary-foreground px-6 py-2.5 rounded-full text-sm font-semibold transition-colors"
             >
               Explore Products
             </a>
@@ -73,11 +73,7 @@ const Header = () => {
               <a
                 key={link.label}
                 href={link.href}
-                className={`block px-3 py-2 rounded text-sm font-medium ${
-                  link.active
-                    ? "text-farm-orange"
-                    : "text-primary-foreground/80 hover:text-farm-orange"
-                }`}
+                className="block px-3 py-2 rounded text-sm font-medium text-primary-foreground/80 hover:text-farm-orange"
                 onClick={() => setMobileOpen(false)}
               >
                 {link.label}

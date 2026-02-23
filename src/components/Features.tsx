@@ -4,42 +4,42 @@ const features = [
   {
     icon: ShieldCheck,
     title: "Healthy & Vaccinated Animals",
-    description: "All our animals are fully vaccinated, well-nourished, stress-free, and maintained at the ideal state of health quality.",
+    description: "All our livestock and poultry are fully vaccinated, disease-free, and regularly health-checked for superior quality.",
   },
   {
     icon: Leaf,
-    title: "Climate Animal Culture",
-    description: "Optimal local conditions drive the most humane breeding with many varieties of breeds ensuring their wellbeing.",
+    title: "Ethical Animal Welfare",
+    description: "Spacious, clean environments with natural feeding and humane practices, animal well-being is our priority.",
   },
   {
     icon: Award,
     title: "Premium Quality & Direct Supply",
-    description: "Best products, direct from our farm to your doorstep, with all checks, verified, and health guaranteed always.",
+    description: "Fresh products straight from our farm to you, with expert care for consistent excellence.",
   },
   {
     icon: Users,
     title: "Experienced & Knowledgeable Team",
-    description: "Built on decades of local and global experience, our livestock care and poultry management team is second to none.",
+    description: "Dedicated experts with years of hands-on farming expertise.",
   },
 ];
 
 const Features = () => {
   return (
-    <section className="bg-card py-0 -mt-1 relative z-10">
+    <section className="bg-background py-0 -mt-1 relative z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 -translate-y-10 md:-translate-y-14">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-card rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border border-border"
+              className="bg-accent rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border border-border"
             >
-              <div className="w-10 h-10 rounded-full bg-farm-orange/10 flex items-center justify-center mb-4">
-                <feature.icon className="h-5 w-5 text-farm-orange" />
+              <div className="w-12 h-12 rounded-full bg-farm-orange/15 flex items-center justify-center mb-4">
+                <feature.icon className="h-6 w-6 text-farm-orange" />
               </div>
-              <h3 className="font-sans font-semibold text-sm text-foreground mb-2">
+              <h3 className="font-sans font-semibold text-base text-foreground mb-3">
                 {feature.title}
               </h3>
-              <p className="text-xs text-muted-foreground leading-relaxed">
+              <p className="text-sm text-muted-foreground leading-relaxed">
                 {feature.description}
               </p>
             </div>

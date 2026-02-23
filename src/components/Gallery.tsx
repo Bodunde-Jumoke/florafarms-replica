@@ -8,14 +8,14 @@ import gallery7 from "@/assets/gallery-7.jpg";
 import gallery8 from "@/assets/gallery-8.jpg";
 
 const images = [
-  { src: gallery1, alt: "Children visiting the poultry farm" },
-  { src: gallery2, alt: "Roosting chickens close-up" },
-  { src: gallery3, alt: "Goats grazing on pasture" },
-  { src: gallery4, alt: "Ducks on the farm" },
-  { src: gallery5, alt: "Farm fresh eggs collection" },
-  { src: gallery6, alt: "Farm workers with poultry" },
-  { src: gallery7, alt: "Cows and calves on the farm" },
-  { src: gallery8, alt: "Rustic chicken coop" },
+  { src: gallery1, alt: "Free-range hen on the farm" },
+  { src: gallery2, alt: "Baby chicks in the brooder" },
+  { src: gallery3, alt: "Geese on the farm grounds" },
+  { src: gallery4, alt: "Goats on the farm" },
+  { src: gallery5, alt: "Roosting hens in the coop" },
+  { src: gallery6, alt: "Farm infrastructure and workers" },
+  { src: gallery7, alt: "Peacocks on display" },
+  { src: gallery8, alt: "Farm entrance and landscaping" },
 ];
 
 const Gallery = () => {
@@ -23,14 +23,14 @@ const Gallery = () => {
     <section id="gallery" className="py-16 md:py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
             Gallery
           </h2>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {images.map((img, index) => (
-            <div key={index} className="aspect-square rounded-xl overflow-hidden">
+            <div key={index} className="aspect-square rounded-2xl overflow-hidden">
               <img
                 src={img.src}
                 alt={img.alt}
