@@ -73,7 +73,7 @@ const WhatWeDo = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {products.map((product, index) => (
-            <div key={index} className="bg-card rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-border">
+            <div key={index} className="bg-card rounded-xl overflow-hidden">
               <div className="aspect-[4/3] overflow-hidden">
                 <img
                   src={product.image}

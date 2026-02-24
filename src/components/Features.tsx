@@ -25,13 +25,13 @@ const features = [
 
 const Features = () => {
   return (
-    <section className="bg-background py-0 -mt-1 relative z-10">
+    <section className="bg-background py-12 md:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 -translate-y-10 md:-translate-y-14">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-accent rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border border-border"
+              className="bg-accent rounded-xl p-6"
             >
               <div className="w-12 h-12 rounded-full bg-farm-orange/15 flex items-center justify-center mb-4">
                 <feature.icon className="h-6 w-6 text-farm-orange" />

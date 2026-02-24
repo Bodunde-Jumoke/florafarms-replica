@@ -36,15 +36,15 @@ const Testimonials = () => {
           {testimonials.map((t, index) => (
             <div
               key={index}
-              className="bg-card rounded-xl p-6 shadow-sm border border-border"
+              className="bg-card rounded-xl p-6 text-center relative"
             >
-              <Quote className="h-8 w-8 text-farm-orange mb-4" />
+              <div className="flex justify-end mb-4">
+                <Quote className="h-8 w-8 text-farm-orange" />
+              </div>
               <p className="text-muted-foreground text-sm leading-relaxed mb-6">
                 "{t.quote}"
               </p>
-              <div className="border-t border-border pt-4">
-                <p className="font-sans font-semibold text-sm text-farm-orange">{t.name}</p>
-              </div>
+              <p className="font-sans font-semibold text-sm text-farm-orange">{t.name}</p>
             </div>
           ))}
         </div>

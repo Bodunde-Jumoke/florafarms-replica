@@ -30,11 +30,11 @@ const Gallery = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {images.map((img, index) => (
-            <div key={index} className="aspect-square rounded-2xl overflow-hidden">
+            <div key={index} className="aspect-[4/5] rounded-2xl overflow-hidden">
               <img
                 src={img.src}
                 alt={img.alt}
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                className="w-full h-full object-cover"
                 loading="lazy"
               />
             </div>
