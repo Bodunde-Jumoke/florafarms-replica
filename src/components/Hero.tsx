@@ -21,9 +21,9 @@ const Hero = () => {
           <p className="text-primary-foreground/80 text-lg mb-8 font-medium">
             Ijurin Ekiti, Nigeria
           </p>
-
+          <hr className="border-primary-foreground/50 mb-10" />
           {/* Description with left border */}
-          <div className="border-l-2 border-primary-foreground/40 pl-6 mb-10">
+          <div className="mb-10">
             <p className="text-primary-foreground/70 text-sm md:text-base leading-relaxed max-w-lg">
               Operating structured production systems that ensure healthy animals and consistent quality standards.
             </p>
