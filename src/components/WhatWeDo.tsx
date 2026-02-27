@@ -1,11 +1,11 @@
 import liveBirds from "@/assets/live-birds.jpg";
 import tableEggs from "@/assets/table-eggs.jpg";
 import swine from "@/assets/swine.jpg";
-import exoticBirds from "@/assets/exotic-birds.jpg";
-import pointOfLay from "@/assets/point-of-lay.jpg";
-import rams from "@/assets/rams.jpg";
-import snails from "@/assets/snails.jpg";
-import peacock from "@/assets/peacock.jpg";
+import ducks from "@/assets/duck1.jpeg";
+import pointOfLay from "@/assets/point-of-lay.jpeg";
+import rams from "@/assets/rams.jpeg";
+import goats from "@/assets/goats.jpg";
+import peacock from "@/assets/peacock.jpeg";
 
 const products = [
   {
@@ -27,8 +27,8 @@ const products = [
     alt: "Pigs on the farm",
   },
   {
-    name: "Exotic Birds",
-    image: exoticBirds,
+    name: "Ducks",
+    image: ducks,
     description: "Carefully bred exotic birds maintained in clean, stress-free environments.",
     alt: "Exotic ducks and geese on the farm",
   },
@@ -45,10 +45,10 @@ const products = [
     alt: "Rams and sheep on the farm",
   },
   {
-    name: "Snails",
-    image: snails,
-    description: "Well-fed snails from controlled environments for the discerning buyer, available in large quantities.",
-    alt: "Farm snails close-up",
+    name: "Goats",
+    image: goats,
+    description: "Well-fed and healthy goats raised in clean, controlled environments for premium meat and dairy.",
+    alt: "Farm goats on the farm",
   },
   {
     name: "Exotic Birds",
