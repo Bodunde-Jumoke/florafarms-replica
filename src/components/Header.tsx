@@ -6,9 +6,9 @@ import logo from "@/assets/logo.png";
 const navLinks = [
   { label: "HOME", href: "/" },
   { label: "ABOUT US", href: "/about" },
-  { label: "OUR PRODUCTS", href: "/#products" },
+  { label: "OUR PRODUCTS", href: "/products" },
   { label: "GALLERY", href: "/#gallery" },
-  { label: "CONTACT US", href: "/#contact" },
+  { label: "CONTACT US", href: "/contact" },
 ];
 
 const Header = () => {

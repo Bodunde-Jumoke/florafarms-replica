@@ -98,7 +98,7 @@ const WhatWeDo = () => {
                   {product.description}
                 </p>
                 <a
-                  href="#"
+                  href={`/products/${product.slug === "exotic-birds-2" ? "exotic-birds" : product.slug}`}
                   className="inline-block text-sm font-semibold text-farm-orange border border-farm-orange px-5 py-2 rounded-full hover:bg-farm-orange hover:text-primary-foreground transition-colors"
                 >
                   View More
