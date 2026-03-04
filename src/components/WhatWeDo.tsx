@@ -10,48 +10,56 @@ import peacock from "@/assets/peacock.jpeg";
 const products = [
   {
     name: "Live Birds",
+    slug: "live-birds",
     image: liveBirds,
     description: "Healthy broilers and layers raised under structured feeding and vaccination programs.",
     alt: "Live chickens on the farm",
   },
   {
     name: "Table Eggs",
+    slug: "table-eggs",
     image: tableEggs,
     description: "Fresh, hygienically handled eggs collected daily and properly graded.",
     alt: "Fresh farm eggs in a basket",
   },
   {
     name: "Swine",
+    slug: "swine",
     image: swine,
     description: "Well-managed pigs raised in controlled housing with balanced nutrition.",
     alt: "Pigs on the farm",
   },
   {
-    name: "Ducks",
+    name: "Exotic Birds",
+    slug: "exotic-birds",
     image: ducks,
     description: "Carefully bred exotic birds maintained in clean, stress-free environments.",
     alt: "Exotic ducks and geese on the farm",
   },
   {
     name: "Point of Lay",
+    slug: "point-of-lay",
     image: pointOfLay,
     description: "Carefully raised point of lay chickens ready for egg production, delivering maximum yield.",
     alt: "Point of lay hens ready for egg production",
   },
   {
     name: "Rams",
+    slug: "rams",
     image: rams,
     description: "Prime quality rams and sheep, carefully selected from the best breeds for every occasion and event.",
     alt: "Rams and sheep on the farm",
   },
   {
     name: "Goats",
+    slug: "goats",
     image: goats,
     description: "Well-fed and healthy goats raised in clean, controlled environments for premium meat and dairy.",
     alt: "Farm goats on the farm",
   },
   {
     name: "Exotic Birds",
+    slug: "exotic-birds-2",
     image: peacock,
     description: "Beautiful peacocks and ornamental birds for farms, events, and private collections.",
     alt: "Peacock on the farm",
@@ -90,7 +98,7 @@ const WhatWeDo = () => {
                   {product.description}
                 </p>
                 <a
-                  href="#"
+                  href={`/products/${product.slug === "exotic-birds-2" ? "exotic-birds" : product.slug}`}
                   className="inline-block text-sm font-semibold text-farm-orange border border-farm-orange px-5 py-2 rounded-full hover:bg-farm-orange hover:text-primary-foreground transition-colors"
                 >
                   View More
