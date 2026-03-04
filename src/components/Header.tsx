@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
 const navLinks = [
@@ -13,26 +13,28 @@ const navLinks = [
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const location = useLocation();
+  const isHome = location.pathname === "/";
 
   return (
-    <header className="bg-farm-green sticky top-0 z-50">
+    <header className={`${isHome ? "absolute" : "bg-farm-green"} top-0 left-0 right-0 z-50`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center shrink-0">
+          <Link to="/" className="flex items-center shrink-0">
             <img src={logo} alt="FloraFarms Poultry logo" className="h-14 w-14 md:h-16 md:w-16 rounded-lg object-cover" />
-          </a>
+          </Link>
 
           {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center gap-2">
             {navLinks.map((link, index) => (
               <div key={link.label} className="flex items-center gap-2">
-                <a
-                  href={link.href}
-                  className="text-sm font-medium text-primary-foreground/90 hover:text-farm-orange transition-colors"
+                <Link
+                  to={link.href}
+                  className="text-sm font-medium text-white/90 hover:text-farm-orange transition-colors"
                 >
                   {link.label}
-                </a>
+                </Link>
                 {index < navLinks.length - 1 && (
                   <span className="w-2 h-2 rounded-full bg-farm-orange" />
                 )}
@@ -42,24 +44,24 @@ const Header = () => {
 
           {/* Right side */}
           <div className="hidden lg:flex items-center gap-6">
-            <a href="tel:+2348124564892" className="flex items-center gap-3 text-primary-foreground">
+            <a href="tel:+2348124564892" className="flex items-center gap-3 text-white">
               <Phone className="h-5 w-5" />
               <div className="flex flex-col">
-                <span className="text-xs text-primary-foreground/70">Call us Now</span>
+                <span className="text-xs text-white/70">Call us Now</span>
                 <span className="text-sm font-semibold">+234 8124564892</span>
               </div>
             </a>
-            <a
-              href="#products"
-              className="bg-farm-orange hover:bg-farm-orange-hover text-primary-foreground px-6 py-2.5 rounded-full text-sm font-semibold transition-colors"
+            <Link
+              to="/products"
+              className="bg-farm-orange hover:bg-farm-orange-hover text-white px-6 py-2.5 rounded-full text-sm font-semibold transition-colors"
             >
               Explore Products
-            </a>
+            </Link>
           </div>
 
           {/* Mobile toggle */}
           <button
-            className="lg:hidden text-primary-foreground"
+            className="lg:hidden text-white"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
           >
@@ -69,23 +71,24 @@ const Header = () => {
 
         {/* Mobile menu */}
         {mobileOpen && (
-          <div className="lg:hidden pb-4 space-y-2">
+          <div className="lg:hidden pb-4 space-y-2 bg-farm-green/95 rounded-b-lg">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.label}
-                href={link.href}
-                className="block px-3 py-2 rounded text-sm font-medium text-primary-foreground/80 hover:text-farm-orange"
+                to={link.href}
+                className="block px-3 py-2 rounded text-sm font-medium text-white/80 hover:text-farm-orange"
                 onClick={() => setMobileOpen(false)}
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
-            <a
-              href="#products"
-              className="block bg-farm-orange text-primary-foreground px-5 py-2.5 rounded-full text-sm font-semibold text-center mt-3"
+            <Link
+              to="/products"
+              className="block bg-farm-orange text-white px-5 py-2.5 rounded-full text-sm font-semibold text-center mt-3"
+              onClick={() => setMobileOpen(false)}
             >
               Explore Products
-            </a>
+            </Link>
           </div>
         )}
       </div>
