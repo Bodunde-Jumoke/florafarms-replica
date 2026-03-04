@@ -6,6 +6,10 @@ import gallery5 from "@/assets/gallery-5.jpeg";
 import gallery6 from "@/assets/gallery-6.jpeg";
 import gallery7 from "@/assets/gallery-7.jpeg";
 import gallery8 from "@/assets/gallery-8.jpeg";
+import gallery9 from "@/assets/Cow.png"
+import gallery10 from "@/assets/crate-egg.png"
+import gallery11 from "@/assets/egg-basket1.png"
+import gallery12 from "@/assets/peacockU.png"
 
 const images = [
   { src: gallery1, alt: "Free-range hen on the farm" },
@@ -16,6 +20,10 @@ const images = [
   { src: gallery6, alt: "Farm infrastructure and workers" },
   { src: gallery7, alt: "Peacocks on display" },
   { src: gallery8, alt: "Farm entrance and landscaping" },
+  { src: gallery9, alt: "Cow on the farm" },
+  { src: gallery10, alt: "Egg crate on the farm" },
+  { src: gallery11, alt: "Egg basket on the farm" },
+  { src: gallery12, alt: "Peacock on the farm" },
 ];
 
 const Gallery = () => {
