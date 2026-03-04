@@ -10,6 +10,7 @@ import peacock from "@/assets/peacock.jpeg";
 const products = [
   {
     name: "Live Birds",
+    slug: "live-birds",
     image: liveBirds,
     description: "Healthy broilers and layers raised under structured feeding and vaccination programs.",
     alt: "Live chickens on the farm",
