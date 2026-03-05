@@ -69,6 +69,8 @@ export default {
           cream: "hsl(var(--farm-cream))",
           "cream-dark": "hsl(var(--farm-cream-dark))",
           "testimonial-bg": "hsl(var(--farm-testimonial-bg))",
+          "testimonial-card": "hsl(var(--farm-testimonial-card))",
+          "footer-bg": "hsl(var(--farm-footer-bg))",
           dark: "hsl(var(--farm-dark))",
           body: "hsl(var(--farm-body))",
         },
