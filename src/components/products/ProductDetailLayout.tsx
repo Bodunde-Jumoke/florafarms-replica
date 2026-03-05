@@ -40,7 +40,7 @@ const ProductDetailLayout = ({
                 <img
                   src={heroImage}
                   alt={heroImageAlt}
-                  className="w-full h-[280px] md:h-[320px] object-cover"
+                  className="w-full h-[280px] md:h-[350px] object-cover"
                 />
               </div>
               <div className="w-full md:w-[35%]">
