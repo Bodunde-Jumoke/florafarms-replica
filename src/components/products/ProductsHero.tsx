@@ -9,7 +9,7 @@ const ProductsHero = () => {
           alt="Farm background with eggs and chickens"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-farm-green/60" />
+        <div className="absolute inset-0 bg-black/30" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-end h-full min-h-[300px] md:min-h-[350px] pb-12">
