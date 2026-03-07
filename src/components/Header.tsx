@@ -18,8 +18,8 @@ const Header = () => {
 
   return (
     <header className="absolute top-0 left-0 right-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 md:h-20">
+      <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center shrink-0">
             <img src={logo} alt="FloraFarms Poultry logo" className="h-14 w-14 md:h-16 md:w-16 rounded-lg object-cover" />
@@ -42,8 +42,8 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Right side */}
-          <div className="hidden lg:flex items-center gap-6">
+          {/* Call us */}
+          <div className="hidden lg:flex items-center">
             <a href="tel:+2348124564892" className="flex items-center gap-3 text-white">
               <Phone className="h-5 w-5" />
               <div className="flex flex-col">
@@ -51,12 +51,6 @@ const Header = () => {
                 <span className="text-sm font-semibold">+234 8124564892</span>
               </div>
             </a>
-            <Link
-              to="/products"
-              className="bg-farm-orange hover:bg-farm-orange-hover text-white px-6 py-2.5 rounded-full text-sm font-semibold transition-colors"
-            >
-              Explore Products
-            </Link>
           </div>
 
           {/* Mobile toggle */}
@@ -69,29 +63,37 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Mobile menu */}
-        {mobileOpen && (
-          <div className="lg:hidden pb-4 space-y-2 bg-farm-green/95 rounded-b-lg">
-            {navLinks.map((link) => (
-              <Link
-                key={link.label}
-                to={link.href}
-                className="block px-3 py-2 rounded text-sm font-medium text-white/80 hover:text-farm-orange"
-                onClick={() => setMobileOpen(false)}
-              >
-                {link.label}
-              </Link>
-            ))}
+        {/* Explore Products button - outside container, flush right */}
+        <Link
+          to="/products"
+          className="hidden lg:flex bg-farm-orange hover:bg-farm-orange-hover text-white px-8 py-5 text-sm font-semibold transition-colors items-center shrink-0"
+        >
+          Explore Products
+        </Link>
+      </div>
+
+      {/* Mobile menu */}
+      {mobileOpen && (
+        <div className="lg:hidden pb-4 space-y-2 bg-farm-green/95 rounded-b-lg px-4">
+          {navLinks.map((link) => (
             <Link
-              to="/products"
-              className="block bg-farm-orange text-white px-5 py-2.5 rounded-full text-sm font-semibold text-center mt-3"
+              key={link.label}
+              to={link.href}
+              className="block px-3 py-2 rounded text-sm font-medium text-white/80 hover:text-farm-orange"
               onClick={() => setMobileOpen(false)}
             >
-              Explore Products
+              {link.label}
             </Link>
-          </div>
-        )}
-      </div>
+          ))}
+          <Link
+            to="/products"
+            className="block bg-farm-orange text-white px-5 py-2.5 rounded-full text-sm font-semibold text-center mt-3"
+            onClick={() => setMobileOpen(false)}
+          >
+            Explore Products
+          </Link>
+        </div>
+      )}
     </header>
   );
 };
