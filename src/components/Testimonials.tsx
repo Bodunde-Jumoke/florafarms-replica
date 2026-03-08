@@ -32,11 +32,11 @@ const Testimonials = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {testimonials.map((t, index) => (
             <div
               key={index}
-              className="bg-farm-testimonial-card rounded-[20px] p-8 text-center relative"
+              className="bg-[#FDF4E6] rounded-[20px] px-6 py-5 text-center relative"
             >
               <div className="absolute -top-3 right-5">
                 <img
@@ -46,7 +46,7 @@ const Testimonials = () => {
                   loading="lazy"
                 />
               </div>
-              <p className="text-farm-dark/80 text-sm leading-relaxed mb-6 mt-4">
+              <p className="text-farm-dark/80 text-sm leading-relaxed mb-4 mt-3">
                 "{t.quote}"
               </p>
               <p className="font-sans font-semibold text-sm text-farm-dark">{t.name}</p>
