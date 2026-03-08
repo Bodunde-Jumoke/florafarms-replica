@@ -5,25 +5,29 @@ const features = [
     icon: ShieldCheck,
     title: "Healthy & Vaccinated Animals",
     description: "All our livestock and poultry are fully vaccinated, disease-free, and regularly health-checked for superior quality.",
-    variant: "light" as const,
+    bg: "#F5F8F3",
+    textDark: true,
   },
   {
     icon: Leaf,
     title: "Ethical Animal Welfare",
     description: "Spacious, clean environments with natural feeding and humane practices, animal well-being is our priority.",
-    variant: "light" as const,
+    bg: "#FAE8CD",
+    textDark: true,
   },
   {
     icon: Award,
     title: "Premium Quality & Direct Supply",
     description: "Fresh products straight from our farm to you, with expert care for consistent excellence.",
-    variant: "dark" as const,
+    bg: "#F0C497",
+    textDark: true,
   },
   {
     icon: Users,
     title: "Experienced & Knowledgeable Team",
     description: "Dedicated experts with years of hands-on farming expertise.",
-    variant: "dark" as const,
+    bg: "#E6A061",
+    textDark: false,
   },
 ];
 
@@ -35,28 +39,23 @@ const Features = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className={`rounded-xl p-6 ${
-                feature.variant === "dark"
-                  ? "bg-farm-orange text-white"
-                  : "bg-accent"
-              }`}
+              className="rounded-xl px-6 py-5"
+              style={{ backgroundColor: feature.bg }}
             >
               <div className={`w-12 h-12 rounded-full flex items-center justify-center mb-4 ${
-                feature.variant === "dark"
-                  ? "bg-white/20"
-                  : "bg-farm-orange/15"
+                feature.textDark ? "bg-farm-orange/15" : "bg-white/20"
               }`}>
                 <feature.icon className={`h-6 w-6 ${
-                  feature.variant === "dark" ? "text-white" : "text-farm-orange"
+                  feature.textDark ? "text-farm-orange" : "text-white"
                 }`} />
               </div>
               <h3 className={`font-sans font-semibold text-base mb-3 ${
-                feature.variant === "dark" ? "text-white" : "text-foreground"
+                feature.textDark ? "text-foreground" : "text-white"
               }`}>
                 {feature.title}
               </h3>
               <p className={`text-sm leading-relaxed ${
-                feature.variant === "dark" ? "text-white/80" : "text-muted-foreground"
+                feature.textDark ? "text-muted-foreground" : "text-white/80"
               }`}>
                 {feature.description}
               </p>
