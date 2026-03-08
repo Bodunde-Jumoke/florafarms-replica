@@ -55,7 +55,7 @@ const Contact = () => {
                 </div>
               </div>
               {/* Location */}
-              <div className="bg-card border border-border rounded-xl p-6 flex items-start gap-4">
+              <a href="https://maps.app.goo.gl/JMGrNnqfdSPqogsW6?g_st=iw" target="_blank" rel="noopener noreferrer" className="bg-card border border-border rounded-xl p-6 flex items-start gap-4 hover:shadow-md transition-shadow">
                 <div className="w-12 h-12 rounded-full bg-farm-orange/15 flex items-center justify-center shrink-0">
                   <MapPin className="h-6 w-6 text-farm-orange" />
                 </div>
@@ -63,7 +63,7 @@ const Contact = () => {
                   <h3 className="font-sans font-semibold text-foreground text-base mb-2">Our Locations</h3>
                   <p className="text-muted-foreground text-sm">Behind Ave Maria Villa, Ijurin Ekiti</p>
                 </div>
-              </div>
+              </a>
             </div>
 
             {/* Map + Form */}
