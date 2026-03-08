@@ -66,7 +66,7 @@ const Header = () => {
         {/* Explore Products button - outside container, flush right */}
         <Link
           to="/products"
-          className="hidden lg:flex bg-farm-orange hover:bg-farm-orange-hover text-white px-8 py-5 text-sm font-semibold transition-colors items-center shrink-0"
+          className="hidden lg:flex bg-farm-orange hover:bg-farm-orange-hover text-white px-8 py-5 text-sm font-semibold transition-colors items-center shrink-0 rounded-bl-2xl"
         >
           Explore Products
         </Link>
