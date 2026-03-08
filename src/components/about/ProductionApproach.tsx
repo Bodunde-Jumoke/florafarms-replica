@@ -1,17 +1,19 @@
-import { Utensils, ShieldCheck, Stethoscope } from "lucide-react";
-import logo from "@/assets/logo.png";
+import structuredFeeding from "@/assets/Structured-Feeding.png";
+import biosecurity from "@/assets/Biosecurity-Hygiene.png";
+import veterinary from "@/assets/Veterinary-Supervision.png";
+import industryImg from "@/assets/industry.png";
 
 const approaches = [
   {
-    icon: Utensils,
+    icon: structuredFeeding,
     label: "Structured Feeding Programs",
   },
   {
-    icon: ShieldCheck,
+    icon: biosecurity,
     label: "Biosecurity & Hygiene",
   },
   {
-    icon: Stethoscope,
+    icon: veterinary,
     label: "Veterinary Supervision",
   },
 ];
@@ -34,7 +36,7 @@ const ProductionApproach = () => {
           {approaches.map((item, index) => (
             <div key={index} className="flex flex-col items-center gap-3">
               <div className="w-20 h-20 rounded-full border-2 border-farm-orange flex items-center justify-center">
-                <item.icon className="h-8 w-8 text-farm-orange" />
+                <img src={item.icon} alt={item.label} className="h-8 w-8 object-contain" />
               </div>
               <span className="font-sans text-xs font-medium text-farm-orange text-center max-w-[140px]">
                 {item.label}
@@ -46,7 +48,7 @@ const ProductionApproach = () => {
         {/* Industry Alignment box */}
         <div className="max-w-lg mx-auto bg-card rounded-xl p-6 flex items-start gap-4">
           <div className="shrink-0 w-16 h-16 rounded-full overflow-hidden bg-farm-green flex items-center justify-center">
-            <img src={logo} alt="PAN - Poultry Association of Nigeria" className="w-full h-full object-cover" />
+            <img src={industryImg} alt="PAN - Poultry Association of Nigeria" className="w-full h-full object-cover" />
           </div>
           <div>
             <h3 className="font-sans font-semibold text-sm text-foreground mb-1">
