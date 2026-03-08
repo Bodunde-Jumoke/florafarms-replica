@@ -1,7 +1,7 @@
 import ProductDetailLayout from "@/components/products/ProductDetailLayout";
 import peacock from "@/assets/peacock.jpeg";
 import peacockU from "@/assets/peacockU.png";
-import duck4 from "@/assets/duck4.jpeg";
+import duck4 from "@/assets/duck4.png";
 
 const ExoticBirds = () => {
   return (
