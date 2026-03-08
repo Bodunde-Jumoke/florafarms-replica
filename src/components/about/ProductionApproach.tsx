@@ -1,17 +1,19 @@
-import { Utensils, ShieldCheck, Stethoscope } from "lucide-react";
-import logo from "@/assets/logo.png";
+import structuredFeeding from "@/assets/Structured-Feeding.png";
+import biosecurity from "@/assets/Biosecurity-Hygiene.png";
+import veterinary from "@/assets/Veterinary-Supervision.png";
+import industryImg from "@/assets/industry.png";
 
 const approaches = [
   {
-    icon: Utensils,
+    icon: structuredFeeding,
     label: "Structured Feeding Programs",
   },
   {
-    icon: ShieldCheck,
+    icon: biosecurity,
     label: "Biosecurity & Hygiene",
   },
   {
-    icon: Stethoscope,
+    icon: veterinary,
     label: "Veterinary Supervision",
   },
 ];
