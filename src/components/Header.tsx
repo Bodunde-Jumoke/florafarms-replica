@@ -26,7 +26,7 @@ const Header = () => {
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-2">
+          <nav className="hidden lg:flex items-center gap-6">
             {navLinks.map((link, index) => (
               <div key={link.label} className="flex items-center gap-2">
                 <Link
