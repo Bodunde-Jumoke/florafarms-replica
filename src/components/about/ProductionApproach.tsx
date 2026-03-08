@@ -34,11 +34,11 @@ const ProductionApproach = () => {
         {/* Three icons */}
         <div className="flex flex-wrap justify-center gap-8 md:gap-16 mb-12">
           {approaches.map((item, index) => (
-            <div key={index} className="flex flex-col items-center gap-3">
-              <div className="w-20 h-20 rounded-full border-2 border-farm-orange flex items-center justify-center">
-                <img src={item.icon} alt={item.label} className="h-8 w-8 object-contain" />
+            <div key={index} className="flex flex-col items-center gap-4">
+              <div className="w-36 h-36 rounded-2xl border border-farm-orange/30 bg-card flex items-center justify-center">
+                <img src={item.icon} alt={item.label} className="h-20 w-20 object-contain" />
               </div>
-              <span className="font-sans text-xs font-medium text-farm-orange text-center max-w-[140px]">
+              <span className="font-sans text-xs font-medium text-farm-orange text-center max-w-[180px]">
                 {item.label}
               </span>
             </div>
@@ -46,15 +46,15 @@ const ProductionApproach = () => {
         </div>
 
         {/* Industry Alignment box */}
-        <div className="max-w-lg mx-auto bg-card rounded-xl p-6 flex items-start gap-4">
-          <div className="shrink-0 w-16 h-16 rounded-full overflow-hidden bg-farm-green flex items-center justify-center">
+        <div className="max-w-2xl mx-auto bg-card rounded-xl p-8 flex items-start gap-6">
+          <div className="shrink-0 w-20 h-20 rounded-full overflow-hidden bg-farm-green flex items-center justify-center">
             <img src={industryImg} alt="PAN - Poultry Association of Nigeria" className="w-full h-full object-cover" />
           </div>
           <div>
-            <h3 className="font-sans font-semibold text-sm text-foreground mb-1">
+            <h3 className="font-display font-bold text-xl text-foreground mb-2">
               Industry Alignment
             </h3>
-            <p className="text-muted-foreground text-xs leading-relaxed">
+            <p className="text-muted-foreground text-sm leading-relaxed">
               Our farm collaborates with the Poultry Association of Nigeria (PAN), reinforcing our commitment to structured poultry production and professional agricultural standards in Nigeria.
             </p>
           </div>
