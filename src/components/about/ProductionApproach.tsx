@@ -36,7 +36,7 @@ const ProductionApproach = () => {
           {approaches.map((item, index) => (
             <div key={index} className="flex flex-col items-center gap-3">
               <div className="w-20 h-20 rounded-full border-2 border-farm-orange flex items-center justify-center">
-                <item.icon className="h-8 w-8 text-farm-orange" />
+                <img src={item.icon} alt={item.label} className="h-8 w-8 object-contain" />
               </div>
               <span className="font-sans text-xs font-medium text-farm-orange text-center max-w-[140px]">
                 {item.label}
