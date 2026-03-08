@@ -1,29 +1,32 @@
-import { ShieldCheck, Leaf, Award, Users } from "lucide-react";
+import chickenIcon from "@/assets/chicken-icon.png";
+import eggIcon from "@/assets/egg-icon.png";
+import pigIcon from "@/assets/pig-icon.png";
+import ramIcon from "@/assets/ram-icon.png";
 
 const features = [
   {
-    icon: ShieldCheck,
+    icon: chickenIcon,
     title: "Healthy & Vaccinated Animals",
     description: "All our livestock and poultry are fully vaccinated, disease-free, and regularly health-checked for superior quality.",
     bg: "#F5F8F3",
     textDark: true,
   },
   {
-    icon: Leaf,
+    icon: eggIcon,
     title: "Ethical Animal Welfare",
     description: "Spacious, clean environments with natural feeding and humane practices, animal well-being is our priority.",
     bg: "#FAE8CD",
     textDark: true,
   },
   {
-    icon: Award,
+    icon: pigIcon,
     title: "Premium Quality & Direct Supply",
     description: "Fresh products straight from our farm to you, with expert care for consistent excellence.",
     bg: "#F0C497",
     textDark: true,
   },
   {
-    icon: Users,
+    icon: ramIcon,
     title: "Experienced & Knowledgeable Team",
     description: "Dedicated experts with years of hands-on farming expertise.",
     bg: "#E6A061",
@@ -42,12 +45,8 @@ const Features = () => {
               className="rounded-xl px-6 py-5"
               style={{ backgroundColor: feature.bg }}
             >
-              <div className={`w-12 h-12 rounded-full flex items-center justify-center mb-4 ${
-                feature.textDark ? "bg-farm-orange/15" : "bg-white/20"
-              }`}>
-                <feature.icon className={`h-6 w-6 ${
-                  feature.textDark ? "text-farm-orange" : "text-white"
-                }`} />
+              <div className="mb-4">
+                <img src={feature.icon} alt={feature.title} className="w-10 h-10 object-contain" />
               </div>
               <h3 className={`font-sans font-semibold text-base mb-3 ${
                 feature.textDark ? "text-foreground" : "text-white"
