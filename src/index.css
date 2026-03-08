@@ -15,7 +15,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 30 10% 15%;
 
-    --primary: 30 80% 53%;
+    --primary: 28 86% 37%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 150 30% 20%;
@@ -32,7 +32,7 @@
 
     --border: 30 20% 88%;
     --input: 30 20% 88%;
-    --ring: 30 80% 53%;
+    --ring: 28 86% 37%;
 
     --radius: 0.5rem;
 
@@ -48,8 +48,8 @@
     /* Custom FloraFarms tokens */
     --farm-green: 150 30% 20%;
     --farm-green-light: 150 25% 30%;
-    --farm-orange: 30 80% 53%;
-    --farm-orange-hover: 30 80% 45%;
+    --farm-orange: 28 86% 37%;
+    --farm-orange-hover: 28 86% 30%;
     --farm-cream: 30 50% 96%;
     --farm-cream-dark: 30 40% 92%;
     --farm-testimonial-bg: 28 71% 64%;
