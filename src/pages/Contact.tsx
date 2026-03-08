@@ -55,7 +55,7 @@ const Contact = () => {
                 </div>
               </div>
               {/* Location */}
-              <a href="https://maps.app.goo.gl/JMGrNnqfdSPqogsW6?g_st=iw" target="_blank" rel="noopener noreferrer" className="bg-card border border-border rounded-xl p-6 flex items-start gap-4 hover:shadow-md transition-shadow">
+              <a href="https://maps.app.goo.gl/eec7L8GMdfuN976p7" target="_blank" rel="noopener noreferrer" className="bg-card border border-border rounded-xl p-6 flex items-start gap-4 hover:shadow-md transition-shadow">
                 <div className="w-12 h-12 rounded-full bg-farm-orange/15 flex items-center justify-center shrink-0">
                   <MapPin className="h-6 w-6 text-farm-orange" />
                 </div>
