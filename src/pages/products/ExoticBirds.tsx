@@ -11,8 +11,8 @@ const ExoticBirds = () => {
       heroImage={peacock}
       heroImageAlt="Peacock on the farm"
       images={[
-        { src: peacockU, alt: "Peacock display" },
-        { src: duck4, alt: "Exotic bird on the farm" },
+        { src: peacockU, alt: "Peacock display"},
+        { src: duck4, alt: "Exotic bird on the farm"},
       ]}
       sections={[
         {
