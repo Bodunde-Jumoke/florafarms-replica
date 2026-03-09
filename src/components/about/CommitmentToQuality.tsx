@@ -1,4 +1,4 @@
-import gallery1 from "@/assets/gallery-1.jpg";
+import gallery1 from "@/assets/point-of-lay.jpeg";
 
 const CommitmentToQuality = () => {
   return (
