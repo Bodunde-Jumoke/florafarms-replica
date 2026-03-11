@@ -1,7 +1,7 @@
 import ProductDetailLayout from "@/components/products/ProductDetailLayout";
 import pointOfLay from "@/assets/point-of-lay.jpeg";
-import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpeg";
+import gallery1 from "@/assets/point-of-lay-1.png";
+import gallery2 from "@/assets/point-of-lay-2.png";
 
 const PointOfLay = () => {
   return (

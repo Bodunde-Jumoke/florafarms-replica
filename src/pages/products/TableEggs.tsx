@@ -1,7 +1,7 @@
 import ProductDetailLayout from "@/components/products/ProductDetailLayout";
 import tableEggs from "@/assets/table-eggs.jpg";
-import crateEgg from "@/assets/crate-egg.png";
-import eggBasket from "@/assets/egg-basket1.png";
+import crateEgg from "@/assets/gallery-8 - Copy.jpeg";
+import eggBasket from "@/assets/egg-basket1 - Copy.png";
 
 const TableEggs = () => {
   return (

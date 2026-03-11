@@ -1,7 +1,7 @@
 import ProductDetailLayout from "@/components/products/ProductDetailLayout";
-import liveBirds from "@/assets/live-birds.jpg";
-import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpeg";
+import liveBirds from "@/assets/live-bird2.png";
+import gallery1 from "@/assets/live-bird1.png";
+import gallery2 from "@/assets/live-bird3.png";
 
 const LiveBirds = () => {
   return (

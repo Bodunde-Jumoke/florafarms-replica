@@ -121,7 +121,7 @@ const Contact = () => {
                   />
                   <button
                     type="submit"
-                    className="w-full bg-farm-orange hover:bg-farm-orange-hover text-primary-foreground py-3 rounded-md font-semibold transition-colors text-sm"
+                    className="w-full bg-farm-orange hover:bg-farm-orange-hover text-primary-foreground py-3 rounded-full font-semibold transition-colors text-sm"
                   >
                     Send Message
                   </button>

@@ -1,6 +1,6 @@
 import ProductDetailLayout from "@/components/products/ProductDetailLayout";
 import peacock from "@/assets/peacock.jpeg";
-import peacockU from "@/assets/peacockU.png";
+import peacockU from "@/assets/gallery-7 - Copy.jpeg";
 import duck4 from "@/assets/duck4.png";
 
 const ExoticBirds = () => {

@@ -1,7 +1,7 @@
 import ProductDetailLayout from "@/components/products/ProductDetailLayout";
 import swine from "@/assets/swine.jpg";
-import pig from "@/assets/pig.jpeg";
-import gallery5 from "@/assets/gallery-5.jpeg";
+import pig from "@/assets/swine2.png";
+import gallery5 from "@/assets/swine3.png";
 
 const Swine = () => {
   return (

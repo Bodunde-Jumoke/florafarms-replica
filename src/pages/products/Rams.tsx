@@ -1,7 +1,7 @@
 import ProductDetailLayout from "@/components/products/ProductDetailLayout";
 import rams from "@/assets/rams.jpeg";
-import goats from "@/assets/goats.jpg";
-import gallery4 from "@/assets/gallery-4.jpg";
+import goats from "@/assets/ram2.jpeg";
+import gallery4 from "@/assets/ram1.png";
 
 const Rams = () => {
   return (
