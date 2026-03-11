@@ -53,21 +53,22 @@ const Header = () => {
             </a>
           </div>
 
-          {/* Mobile toggle */}
-          <button
-            className="lg:hidden text-white"
-            onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label="Toggle menu"
-          >
-            {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
         </div>
 
-        {/* Curved white corner panel - top right */}
-        <div className="bg-white rounded-bl-[40px] md:rounded-bl-[60px] flex items-center shrink-0 px-3 py-2 md:px-5 md:py-3">
+        {/* Mobile: hamburger toggle in place of corner panel */}
+        <button
+          className="lg:hidden text-white shrink-0 px-4 py-3"
+          onClick={() => setMobileOpen(!mobileOpen)}
+          aria-label="Toggle menu"
+        >
+          {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+        </button>
+
+        {/* Desktop: Curved white corner panel - top right */}
+        <div className="hidden lg:flex bg-white rounded-bl-[60px] items-center shrink-0 px-5 py-3">
           <Link
             to="/products"
-            className="bg-farm-orange hover:bg-farm-orange-hover text-white px-3 py-2 md:px-4 md:py-2.5 text-xs md:text-sm font-semibold transition-colors flex items-center rounded-full whitespace-nowrap"
+            className="bg-farm-orange hover:bg-farm-orange-hover text-white px-4 py-2.5 text-sm font-semibold transition-colors flex items-center rounded-full whitespace-nowrap"
           >
             Explore Products
           </Link>
