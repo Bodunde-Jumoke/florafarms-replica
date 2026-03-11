@@ -63,13 +63,15 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Explore Products button - outside container, flush right */}
-        <Link
-          to="/products"
-          className="hidden lg:flex bg-farm-orange hover:bg-farm-orange-hover text-white px-4 py-2.5 text-sm font-semibold transition-colors items-center shrink-0 rounded-full mr-4"
-        >
-          Explore Products
-        </Link>
+        {/* Curved white corner panel - top right */}
+        <div className="bg-white rounded-bl-[40px] md:rounded-bl-[60px] flex items-center shrink-0 px-3 py-2 md:px-5 md:py-3">
+          <Link
+            to="/products"
+            className="bg-farm-orange hover:bg-farm-orange-hover text-white px-3 py-2 md:px-4 md:py-2.5 text-xs md:text-sm font-semibold transition-colors flex items-center rounded-full whitespace-nowrap"
+          >
+            Explore Products
+          </Link>
+        </div>
       </div>
 
       {/* Mobile menu */}
