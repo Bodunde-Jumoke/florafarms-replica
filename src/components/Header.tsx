@@ -18,7 +18,7 @@ const Header = () => {
 
   return (
     <header className="absolute top-0 left-0 right-0 z-50">
-      <div className="relative flex items-center h-16 md:h-20">
+      <div className="flex items-center justify-between h-16 md:h-20">
         <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center shrink-0">
@@ -63,15 +63,13 @@ const Header = () => {
           </button>
         </div>
 
-        {/* White curved corner panel - top right */}
-        <div className="hidden lg:flex absolute top-0 right-0 bg-white rounded-bl-[60px] px-6 py-3 items-center justify-center h-full">
-          <Link
-            to="/products"
-            className="bg-farm-orange hover:bg-farm-orange-hover text-white px-6 py-2.5 text-sm font-semibold transition-colors rounded-full"
-          >
-            Explore Products
-          </Link>
-        </div>
+        {/* Explore Products button - outside container, flush right */}
+        <Link
+          to="/products"
+          className="hidden lg:flex bg-farm-orange hover:bg-farm-orange-hover text-white px-4 py-2.5 text-sm font-semibold transition-colors items-center shrink-0 rounded-full mr-4"
+        >
+          Explore Products
+        </Link>
       </div>
 
       {/* Mobile menu */}
