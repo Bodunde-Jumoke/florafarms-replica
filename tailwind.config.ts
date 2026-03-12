@@ -14,8 +14,9 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Poppins', 'sans-serif'],
-        display: ['Playfair Display', 'serif'],
+        sans: ['Signika', 'sans-serif'],
+        signika: ['Signika', 'sans-serif'],
+        display: ['Signika', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",

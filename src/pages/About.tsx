@@ -4,6 +4,7 @@ import Testimonials from "@/components/Testimonials";
 import AboutHero from "@/components/about/AboutHero";
 import WhoWeAre from "@/components/about/WhoWeAre";
 import CommitmentToQuality from "@/components/about/CommitmentToQuality";
+import VisionMissionValues from "@/components/about/VisionMissionValues";
 import ProductionApproach from "@/components/about/ProductionApproach";
 
 const About = () => {
@@ -14,6 +15,7 @@ const About = () => {
         <AboutHero />
         <WhoWeAre />
         <CommitmentToQuality />
+        <VisionMissionValues />
         <ProductionApproach />
         <Testimonials />
       </main>
