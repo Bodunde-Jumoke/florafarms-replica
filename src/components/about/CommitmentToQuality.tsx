@@ -27,7 +27,7 @@ const CommitmentToQuality = () => {
             <div className="space-y-4">
               {/* Item 01 - Highlighted card */}
               <div className="bg-farm-testimonial-card rounded-2xl p-6 flex items-center gap-4">
-                <span className="font-display text-4xl md:text-5xl font-bold text-farm-orange">
+                <span className="font-display text-4xl md:text-7xl font-bold font-bold text-[#E6A061]">
                   01
                 </span>
                 <span className="font-sans text-sm font-medium text-foreground">
@@ -37,7 +37,7 @@ const CommitmentToQuality = () => {
 
               {/* Item 02 - Simple row */}
               <div className="flex items-center gap-4 pb-4 border-b border-foreground/10">
-                <span className="font-display text-4xl md:text-5xl font-bold text-farm-orange/30">
+                <span className="font-display text-4xl md:text-7xl font-bold text-farm-orange/30">
                   02
                 </span>
                 <span className="font-sans text-sm font-medium text-foreground">
@@ -47,7 +47,7 @@ const CommitmentToQuality = () => {
 
               {/* Item 03 - Simple row */}
               <div className="flex items-center gap-4 pb-4 border-b border-foreground/10">
-                <span className="font-display text-4xl md:text-5xl font-bold text-farm-orange/30">
+                <span className="font-display text-4xl md:text-7xl font-bold text-farm-orange/30">
                   03
                 </span>
                 <span className="font-sans text-sm font-medium text-foreground">
