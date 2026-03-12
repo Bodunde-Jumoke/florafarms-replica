@@ -52,25 +52,25 @@ const VisionMissionValues = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1200px] mx-auto">
           {cards.map((card, index) => (
-            <div key={index} className="flex flex-col">
+            <div key={index} className="rounded-2xl overflow-hidden bg-[hsl(30_20%_95%)]">
               {/* Image with icon overlay */}
-              <div className="relative rounded-xl overflow-hidden">
+              <div className="relative">
                 <img
                   src={card.image}
                   alt={card.imageAlt}
-                  className="w-full h-[250px] md:h-[280px] object-cover"
+                  className="w-full h-[260px] object-cover"
                   loading="lazy"
                 />
                 {/* Icon positioned at bottom-right, overlapping */}
-                <div className="absolute -bottom-6 right-6 w-14 h-14 rounded-full bg-farm-orange flex items-center justify-center shadow-md z-10">
+                <div className="absolute -bottom-5 right-5 w-14 h-14 rounded-xl bg-farm-orange flex items-center justify-center shadow-md z-10">
                   <img src={card.icon} alt={card.iconAlt} className="w-8 h-8 object-contain" />
                 </div>
               </div>
 
-              {/* Text content */}
-              <div className="pt-10 pb-4 px-2">
+              {/* Text content inside card */}
+              <div className="p-6 pt-8">
                 <h3 className="font-signika font-bold text-xl text-foreground mb-3">
                   {card.title}
                 </h3>
