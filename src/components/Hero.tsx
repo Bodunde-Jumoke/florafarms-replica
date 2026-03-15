@@ -11,7 +11,7 @@ const Hero = () => {
           className="w-full h-full object-cover"
         />
         {/* Subtle dark overlay, NOT green */}
-        <div className="absolute inset-0 bg-black/30" />
+        <div className="absolute inset-0 bg-farm-black/30" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

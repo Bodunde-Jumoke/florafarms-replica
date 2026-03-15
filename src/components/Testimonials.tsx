@@ -38,7 +38,7 @@ const Testimonials = () => {
               key={index}
               className="bg-[#FDF4E6] rounded-[20px] px-6 py-5 text-center relative"
             >
-              <div className="absolute -top-3 right-5">
+              <div className="absolute -top-3 right-1">
                 <img
                   src={quotationIcon}
                   alt="Quote icon"

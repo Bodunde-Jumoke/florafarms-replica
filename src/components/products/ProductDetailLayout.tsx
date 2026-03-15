@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import Gallery from "@/components/Gallery";
 import ProductsHero from "./ProductsHero";
 import ProductSidebar from "./ProductSidebar";
-
+import heroBG from "@/assets/about-hero.png";
 interface ProductSection {
   title: string;
   content: string[];
@@ -38,9 +38,10 @@ const ProductDetailLayout = ({
             <div className="flex flex-col md:flex-row gap-8 items-start justify-center">
               <div className="w-full md:w-[55%] overflow-hidden rounded-lg">
                 <img
-                  src={heroImage}
+                  src={heroBG}
                   alt={heroImageAlt}
-                  className="w-full h-[280px] md:h-[350px] object-cover"
+                  className="w-full h-[280px] md:h-[460px] object-cover"
+                  
                 />
               </div>
               <div className="w-full md:w-[35%]">
