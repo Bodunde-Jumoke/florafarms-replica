@@ -1,14 +1,35 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import GallerySection from "@/components/Gallery";
+import heroBg from "@/assets/about-hero.png";
 
 const Gallery = () => {
   return (
     <div className="min-h-screen">
       <Header />
       <main>
-        {/* Spacer for absolute header */}
-        <div className="h-20 bg-farm-green" />
+        {/* Hero Section */}
+        <section className="relative bg-farm-green overflow-hidden min-h-[300px] md:min-h-[460px]">
+          <div className="absolute inset-0">
+            <img
+              src={heroBg}
+              alt="Farm background"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-black/30" />
+          </div>
+          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-end h-full min-h-[300px] md:min-h-[460px] pb-12">
+            <h1 className="text-primary-foreground font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-3 text-center">
+              Gallery
+            </h1>
+            <p className="text-primary-foreground/70 text-sm text-center">
+              <a href="/" className="hover:text-farm-orange transition-colors">HOME</a>
+              {" / "}
+              <span>GALLERY</span>
+            </p>
+          </div>
+        </section>
+
         <GallerySection />
       </main>
       <Footer />
