@@ -47,7 +47,7 @@ const VisionMissionValues = () => {
     <section className="py-16 md:py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="font-signika text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
+          <h2 className="font-signika text-3xl md:text-4xl lg:text-5xl font-regular text-foreground">
             Vision, Mission and Core Values
           </h2>
         </div>
@@ -64,9 +64,10 @@ const VisionMissionValues = () => {
                   loading="lazy"
                 />
                 {/* Icon positioned at bottom-right, overlapping */}
-                <div className="absolute -bottom-5 right-5 w-14 h-14 rounded-xl bg-farm-orange flex items-center justify-center shadow-md z-10">
-                  <img src={card.icon} alt={card.iconAlt} className="w-8 h-8 object-contain" />
+                <div className="absolute -bottom-5 right-5 w-18 h-18  flex items-center justify-center  z-10">
+                  <img src={card.icon} alt={card.iconAlt} className="w-13 h-13 object-contain" />
                 </div>
+        
               </div>
 
               {/* Text content inside card */}

@@ -16,7 +16,7 @@ const Hero = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-32 lg:py-40 max-w-2xl">
-          <h1 className="text-white font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
+          <h1 className="text-white font-signika text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
             Commercial Livestock and Poultry Farm
           </h1>
           <p className="text-white/80 text-lg mb-8 font-medium">
