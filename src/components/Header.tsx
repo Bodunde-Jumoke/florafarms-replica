@@ -65,7 +65,7 @@ const Header = () => {
         </button>
 
         {/* Desktop: Curved white corner panel - top right */}
-        <div className="hidden lg:flex rounded-bl-[60px] items-center shrink-0 px-5 py-3">
+        <div className="hidden lg:flex rounded-bl-[60px] items-center shrink-0 px-5 py-3 mb-5">
           <Link
             to="/products"
             className="bg-farm-orange hover:bg-farm-orange-hover text-white px-4 py-2.5 text-sm font-semibold transition-colors flex items-center rounded-full whitespace-nowrap"
