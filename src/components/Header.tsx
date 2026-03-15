@@ -82,7 +82,7 @@ const Header = () => {
             <Link
               key={link.label}
               to={link.href}
-              className="block px-3 py-2 rounded text-sm font-medium text-white/80 hover:text-farm-orange"
+              className="block px-4 py-2 rounded-full text-sm font-medium text-white/80 hover:text-farm-orange hover:bg-white/15 transition-all duration-300"
               onClick={() => setMobileOpen(false)}
             >
               {link.label}

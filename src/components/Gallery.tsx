@@ -1,3 +1,4 @@
+import { useState } from "react";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpeg";
 import gallery3 from "@/assets/gallery-3.jpeg";
@@ -6,10 +7,10 @@ import gallery5 from "@/assets/gallery-5.jpeg";
 import gallery6 from "@/assets/gallery-6.jpeg";
 import gallery7 from "@/assets/gallery-7.jpeg";
 import gallery8 from "@/assets/gallery-8.jpeg";
-import gallery9 from "@/assets/Cow.png"
-import gallery10 from "@/assets/crate-egg.png"
-import gallery11 from "@/assets/egg-basket1.png"
-import gallery12 from "@/assets/peacockU.png"
+import gallery9 from "@/assets/Cow.png";
+import gallery10 from "@/assets/crate-egg.png";
+import gallery11 from "@/assets/egg-basket1.png";
+import gallery12 from "@/assets/peacockU.png";
 
 const images = [
   { src: gallery1, alt: "Free-range hen on the farm" },
@@ -26,18 +27,23 @@ const images = [
   { src: gallery12, alt: "Peacock on the farm" },
 ];
 
+const INITIAL_COUNT = 8;
+
 const Gallery = () => {
+  const [showAll, setShowAll] = useState(false);
+  const visibleImages = showAll ? images : images.slice(0, INITIAL_COUNT);
+
   return (
     <section id="gallery" className="py-16 md:py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
             Gallery
           </h2>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {images.map((img, index) => (
+          {visibleImages.map((img, index) => (
             <div key={index} className="aspect-[4/5] rounded-2xl overflow-hidden">
               <img
                 src={img.src}
@@ -49,14 +55,16 @@ const Gallery = () => {
           ))}
         </div>
 
-        <div className="text-center mt-10">
-          <a
-            href="#gallery"
-            className="inline-block bg-farm-orange hover:bg-farm-orange-hover text-primary-foreground px-8 py-3 rounded-full font-semibold transition-colors text-sm"
-          >
-            View More Gallery
-          </a>
-        </div>
+        {!showAll && images.length > INITIAL_COUNT && (
+          <div className="text-center mt-10">
+            <button
+              onClick={() => setShowAll(true)}
+              className="inline-block bg-farm-orange hover:bg-farm-orange-hover text-primary-foreground px-8 py-3 rounded-full font-semibold transition-colors text-sm"
+            >
+              View More Gallery
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
