@@ -59,13 +59,13 @@ const Header = () => {
 
         </div>
 
-        {/* Mobile: hamburger toggle in place of corner panel */}
+        {/* Mobile: hamburger toggle - orange icon */}
         <button
-          className="lg:hidden text-white shrink-0 px-4 py-3"
+          className="lg:hidden text-farm-orange shrink-0 px-4 py-3"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
-          {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          {mobileOpen ? <X className="h-7 w-7" /> : <Menu className="h-7 w-7" />}
         </button>
 
         {/* Desktop: Curved white corner panel - top right */}
@@ -86,7 +86,11 @@ const Header = () => {
             <Link
               key={link.label}
               to={link.href}
-              className="block px-4 py-2 rounded-full text-sm font-medium text-white/80 hover:text-farm-orange hover:bg-white/15 transition-all duration-300"
+              className={`block px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+                location.pathname === link.href
+                  ? "bg-farm-orange text-primary-foreground"
+                  : "text-white/80 hover:text-farm-orange hover:bg-white/15"
+              }`}
               onClick={() => setMobileOpen(false)}
             >
               {link.label}
@@ -99,6 +103,14 @@ const Header = () => {
           >
             Explore Products
           </Link>
+          {/* Call us - mobile */}
+          <a href="tel:+2348124564892" className="flex items-center gap-3 text-white px-4 py-3 mt-2">
+            <Phone className="h-5 w-5 text-farm-orange" />
+            <div className="flex flex-col">
+              <span className="text-xs text-white/70">Call us Now</span>
+              <span className="text-sm font-semibold">+234 8124564892</span>
+            </div>
+          </a>
         </div>
       )}
     </header>

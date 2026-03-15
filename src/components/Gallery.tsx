@@ -1,3 +1,4 @@
+import { useState } from "react";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpeg";
 import gallery3 from "@/assets/gallery-3.jpeg";
@@ -42,7 +43,12 @@ const images = [
   { src: gallery9, alt: "Cow on the farm" },
 ];
 
+const INITIAL_COUNT = 8;
+
 const Gallery = () => {
+  const [showAll, setShowAll] = useState(false);
+  const visibleImages = showAll ? images : images.slice(0, INITIAL_COUNT);
+
   return (
     <section id="gallery" className="py-16 md:py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -53,7 +59,7 @@ const Gallery = () => {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {images.map((img, index) => (
+          {visibleImages.map((img, index) => (
             <div key={index} className="aspect-[4/5] rounded-2xl overflow-hidden">
               <img
                 src={img.src}
@@ -64,6 +70,17 @@ const Gallery = () => {
             </div>
           ))}
         </div>
+
+        {!showAll && images.length > INITIAL_COUNT && (
+          <div className="text-center mt-10">
+            <button
+              onClick={() => setShowAll(true)}
+              className="bg-farm-orange hover:bg-farm-orange-hover text-primary-foreground px-8 py-3 rounded-full font-semibold transition-colors"
+            >
+              View More
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
