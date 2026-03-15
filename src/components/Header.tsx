@@ -31,7 +31,11 @@ const Header = () => {
               <div key={link.label} className="flex items-center gap-2">
               <Link
                   to={link.href}
-                  className="text-sm font-medium text-white/90 hover:text-farm-orange hover:bg-white/15 rounded-full px-4 py-2 transition-all duration-300"
+                  className={`text-sm font-medium rounded-full px-4 py-2 transition-all duration-300 ${
+                    location.pathname === link.href
+                      ? "bg-farm-orange text-primary-foreground"
+                      : "text-white/90 hover:text-farm-orange hover:bg-white/15"
+                  }`}
                 >
                   {link.label}
                 </Link>
