@@ -1,5 +1,7 @@
 import teamImg from "@/assets/team.jpeg";
 import farmImg from "@/assets/farm.jpeg";
+import structureIcon from "@/assets/structure-prod-system (1).png";
+import qualityIcon from "@/assets/quality-icon.png";
 
 const WhoWeAre = () => {
   return (
@@ -28,10 +30,10 @@ const WhoWeAre = () => {
 
           {/* Text content */}
           <div>
-            <span className="text-farm-orange text-sm font-sans font-medium mb-2 block">
+            <span className="text-farm-orange text-sm font-semibold mb-2 block">
               Who We Are
             </span>
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6 leading-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 leading-tight">
               A Privately Managed Commercial Farm
             </h2>
             <p className="text-muted-foreground text-sm leading-relaxed mb-4">
@@ -41,10 +43,11 @@ const WhoWeAre = () => {
               Through disciplined farm practices, controlled housing systems, and routine health monitoring, we ensure stability and quality across all production units.
             </p>
 
-            {/* Two feature boxes */}
+            {/* Two feature boxes with icons */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div>
-                <h3 className="font-sans font-semibold text-sm text-foreground mb-2">
+                <img src={structureIcon} alt="Structured Production Systems icon" className="h-10 w-10 mb-3" />
+                <h3 className="font-semibold text-sm text-foreground mb-2">
                   Structured Production Systems
                 </h3>
                 <p className="text-muted-foreground text-xs leading-relaxed">
@@ -52,7 +55,8 @@ const WhoWeAre = () => {
                 </p>
               </div>
               <div>
-                <h3 className="font-sans font-semibold text-sm text-foreground mb-2">
+                <img src={qualityIcon} alt="Commitment to Quality icon" className="h-10 w-10 mb-3" />
+                <h3 className="font-semibold text-sm text-foreground mb-2">
                   Commitment to Quality & Biosecurity
                 </h3>
                 <p className="text-muted-foreground text-xs leading-relaxed">

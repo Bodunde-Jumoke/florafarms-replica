@@ -14,6 +14,7 @@ import ExoticBirds from "./pages/products/ExoticBirds";
 import PointOfLay from "./pages/products/PointOfLay";
 import Rams from "./pages/products/Rams";
 import Goats from "./pages/products/Goats";
+import GalleryPage from "./pages/Gallery";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -35,6 +36,7 @@ const App = () => (
           <Route path="/products/point-of-lay" element={<PointOfLay />} />
           <Route path="/products/rams" element={<Rams />} />
           <Route path="/products/goats" element={<Goats />} />
+          <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

@@ -7,7 +7,7 @@ const navLinks = [
   { label: "HOME", href: "/" },
   { label: "ABOUT US", href: "/about" },
   { label: "OUR PRODUCTS", href: "/products" },
-  { label: "GALLERY", href: "/#gallery" },
+  { label: "GALLERY", href: "/gallery" },
   { label: "CONTACT US", href: "/contact" },
 ];
 
@@ -29,9 +29,9 @@ const Header = () => {
           <nav className="hidden lg:flex items-center gap-6">
             {navLinks.map((link, index) => (
               <div key={link.label} className="flex items-center gap-2">
-                <Link
+              <Link
                   to={link.href}
-                  className="text-sm font-medium text-white/90 hover:text-farm-orange transition-colors"
+                  className="text-sm font-medium text-white/90 hover:text-farm-orange hover:bg-white/15 rounded-full px-4 py-2 transition-all duration-300"
                 >
                   {link.label}
                 </Link>
@@ -82,7 +82,7 @@ const Header = () => {
             <Link
               key={link.label}
               to={link.href}
-              className="block px-3 py-2 rounded text-sm font-medium text-white/80 hover:text-farm-orange"
+              className="block px-4 py-2 rounded-full text-sm font-medium text-white/80 hover:text-farm-orange hover:bg-white/15 transition-all duration-300"
               onClick={() => setMobileOpen(false)}
             >
               {link.label}
