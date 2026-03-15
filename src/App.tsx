@@ -14,6 +14,7 @@ import ExoticBirds from "./pages/products/ExoticBirds";
 import PointOfLay from "./pages/products/PointOfLay";
 import Rams from "./pages/products/Rams";
 import Goats from "./pages/products/Goats";
+import GalleryPage from "./pages/Gallery";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
