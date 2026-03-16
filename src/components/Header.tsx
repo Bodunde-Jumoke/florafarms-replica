@@ -61,7 +61,7 @@ const Header = () => {
 
         {/* Mobile: hamburger toggle - orange icon */}
         <button
-          className="lg:hidden text-farm-orange shrink-0 px-4 py-3"
+          className="lg:hidden text-white shrink-0 px-4 py-3"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
