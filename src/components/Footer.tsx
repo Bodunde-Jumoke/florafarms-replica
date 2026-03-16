@@ -39,7 +39,7 @@ const Footer = () => {
                 { label: "Home", href: "/" },
                 { label: "About Us", href: "/about" },
                 { label: "Our Products", href: "/products" },
-                { label: "Gallery", href: "/#gallery" },
+                { label: "Gallery", href: "/gallery" },
               ].map((item) => (
                 <li key={item.label}>
                   <a href={item.href} className="text-farm-dark/70 text-sm hover:text-farm-orange transition-colors">
