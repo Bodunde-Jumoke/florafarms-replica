@@ -14,7 +14,6 @@ const navLinks = [
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const location = useLocation();
-  const isHome = location.pathname === "/";
 
   return (
     <header className="absolute top-0 left-0 right-0 z-50">
@@ -22,14 +21,14 @@ const Header = () => {
         <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center shrink-0">
-            <img src={logo} alt="FloraFarms Poultry logo" className="h-14 w-14 md:h-16 md:w-16 rounded-lg object-cover" />
+            <img src={logo} alt="FloraFarms Poultry logo" className="h-14 w-14 md:h-16 md:w-16 rounded-lg object-cover" width={64} height={64} />
           </Link>
 
           {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center gap-6">
             {navLinks.map((link, index) => (
               <div key={link.label} className="flex items-center gap-2">
-              <Link
+                <Link
                   to={link.href}
                   className={`text-sm font-medium rounded-full px-4 py-2 transition-all duration-300 ${
                     location.pathname === link.href
@@ -46,7 +45,7 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Call us */}
+          {/* Call us - desktop */}
           <div className="hidden lg:flex items-center">
             <a href="tel:+2348124564892" className="flex items-center gap-3 text-white">
               <Phone className="h-5 w-5" />
@@ -56,10 +55,9 @@ const Header = () => {
               </div>
             </a>
           </div>
-
         </div>
 
-        {/* Mobile: hamburger toggle - orange icon */}
+        {/* Mobile: hamburger toggle */}
         <button
           className="lg:hidden text-white shrink-0 px-4 py-3"
           onClick={() => setMobileOpen(!mobileOpen)}
@@ -68,7 +66,7 @@ const Header = () => {
           {mobileOpen ? <X className="h-7 w-7" /> : <Menu className="h-7 w-7" />}
         </button>
 
-        {/* Desktop: Curved white corner panel - top right */}
+        {/* Desktop: Explore Products button */}
         <div className="hidden lg:flex rounded-bl-[60px] items-center shrink-0 px-5 py-3 mb-5">
           <Link
             to="/products"
@@ -79,9 +77,9 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile menu - NO Explore Products button */}
       {mobileOpen && (
-        <div className="lg:hidden pb-4 space-y-2 bg-farm-green/95 rounded-b-lg px-4">
+        <nav className="lg:hidden pb-4 space-y-2 bg-farm-green/95 rounded-b-lg px-4">
           {navLinks.map((link) => (
             <Link
               key={link.label}
@@ -96,13 +94,6 @@ const Header = () => {
               {link.label}
             </Link>
           ))}
-          <Link
-            to="/products"
-            className="block bg-farm-orange text-white px-5 py-2.5 rounded-full text-sm font-semibold text-center mt-3"
-            onClick={() => setMobileOpen(false)}
-          >
-            Explore Products
-          </Link>
           {/* Call us - mobile */}
           <a href="tel:+2348124564892" className="flex items-center gap-3 text-white px-4 py-3 mt-2">
             <Phone className="h-5 w-5 text-farm-orange" />
@@ -111,7 +102,7 @@ const Header = () => {
               <span className="text-sm font-semibold">+234 8124564892</span>
             </div>
           </a>
-        </div>
+        </nav>
       )}
     </header>
   );

@@ -1,19 +1,24 @@
+import { useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import GallerySection from "@/components/Gallery";
 import heroBg from "@/assets/about-hero.png";
 
 const Gallery = () => {
+  useEffect(() => {
+    document.title = "Gallery | FloraFarms Poultry - Farm Photos";
+    document.querySelector('meta[name="description"]')?.setAttribute("content", "Browse photos from FloraFarms Poultry in Ijurin Ekiti, Nigeria. See our livestock, poultry, farm facilities, and products.");
+  }, []);
+
   return (
     <div className="min-h-screen">
       <Header />
       <main>
-        {/* Hero Section */}
         <section className="relative bg-farm-green overflow-hidden min-h-[300px] md:min-h-[460px]">
           <div className="absolute inset-0">
             <img
               src={heroBg}
-              alt="Farm background"
+              alt="FloraFarms background landscape"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/30" />
