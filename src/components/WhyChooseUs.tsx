@@ -11,6 +11,8 @@ const WhyChooseUs = () => {
               src={whyChooseImg}
               alt="FloraFarms team members standing together"
               className="w-full h-[400px] lg:h-[550px] object-cover"
+              loading="lazy"
+              decoding="async"
             />
           </div>
 
@@ -26,7 +28,7 @@ const WhyChooseUs = () => {
               We operate as a structured private agricultural enterprise focused on consistency, animal welfare, and professional farm management. Our systems are designed to support reliable livestock and poultry production under Nigerian farming conditions.
             </p>
             <a
-              href="#about"
+              href="/about"
               className="inline-block bg-farm-orange hover:bg-farm-orange-hover text-primary-foreground px-8 py-3 rounded-full font-semibold transition-colors text-sm"
             >
               Read More About Us
