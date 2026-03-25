@@ -47,14 +47,14 @@ const ProductionApproach = () => {
 
         {/* Industry Alignment box */}
         <div className="max-w-2xl mx-auto bg-card rounded-xl p-8 flex items-start gap-6">
-          <div className="shrink-0 w-20 h-20 rounded-full overflow-hidden bg-farm-green flex items-center justify-center">
+          <div className="shrink-0 w-20 h-20 rounded-full overflow-hidden  flex items-center justify-center">
             <img src={industryImg} alt="PAN - Poultry Association of Nigeria" className="w-full h-full object-cover" />
           </div>
           <div>
-            <h3 className="font-display font-bold text-xl text-foreground mb-2">
+            <h3 className="font-signika text-[#452102] font-bold text-l text-foreground mb-2">
               Industry Alignment
             </h3>
-            <p className="text-muted-foreground text-sm leading-relaxed">
+            <p className="text-muted-foreground text-[#452102] text-sm leading-relaxed">
               Our farm collaborates with the Poultry Association of Nigeria (PAN), reinforcing our commitment to structured poultry production and professional agricultural standards in Nigeria.
             </p>
           </div>

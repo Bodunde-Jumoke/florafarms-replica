@@ -18,7 +18,7 @@ const ExoticBirds = () => {
         {
           title: "Managed Care & Controlled Environments",
           content: [
-            "Our Exotic bird unit maintains selected species under structured care systems designed to support health, hygiene, and breeding viability. Each species is housed in enclosures suited to its environmental and behavioral requirements.",
+            "Our Exotic bird unit maintains selected species under structured care systems designed to support health, hygiene, and breeding stability. Each species is housed in enclosures suited to its environmental and behavioral requirements."
           ],
         },
         {

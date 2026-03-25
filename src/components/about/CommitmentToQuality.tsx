@@ -17,40 +17,40 @@ const CommitmentToQuality = () => {
 
           {/* Content */}
           <div>
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4 leading-tight">
+            <h2 className="font-signika text-white text-3xl md:text-4xl font-bold text-foreground mb-4 leading-tight">
               Our Commitment to Quality
             </h2>
-            <p className="text-foreground/80 text-sm leading-relaxed mb-8">
+            <p className="text-foreground/80 text-white text-md leading-relaxed mb-8">
               As a private commercial farm, we prioritize consistent standards over short-term output. Our production systems are designed to maintain reliability, stability, and scalable agricultural operations.
             </p>
 
             <div className="space-y-4">
               {/* Item 01 - Highlighted card */}
               <div className="bg-farm-testimonial-card rounded-2xl p-6 flex items-center gap-4">
-                <span className="font-display text-4xl md:text-7xl font-bold font-bold text-[#E6A061]">
+                <span className="font-signika text-4xl md:text-7xl font-bold font-bold text-[#E6A061]">
                   01
                 </span>
-                <span className="font-sans text-sm font-medium text-foreground">
+                <span className="font-signika text-[#452102] text-sm font-medium text-foreground">
                   Controlled Housing Systems
                 </span>
               </div>
 
               {/* Item 02 - Simple row */}
               <div className="flex items-center gap-4 pb-4 border-b border-foreground/10">
-                <span className="font-display text-4xl md:text-7xl font-bold text-farm-orange/30">
+                <span className="font-signika text-white text-4xl md:text-7xl font-bold text-farm-orange/30">
                   02
                 </span>
-                <span className="font-sans text-sm font-medium text-foreground">
+                <span className="font-signika text-white text-sm font-medium text-foreground">
                   Monitored Growth Cycles
                 </span>
               </div>
 
               {/* Item 03 - Simple row */}
               <div className="flex items-center gap-4 pb-4 border-b border-foreground/10">
-                <span className="font-display text-4xl md:text-7xl font-bold text-farm-orange/30">
+                <span className="font-signika text-white text-4xl md:text-7xl font-bold text-farm-orange/30">
                   03
                 </span>
-                <span className="font-sans text-sm font-medium text-foreground">
+                <span className="font-signika text-white text-sm font-medium text-foreground">
                   Climate-Suitable Management for Nigeria
                 </span>
               </div>

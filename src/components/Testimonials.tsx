@@ -24,10 +24,10 @@ const Testimonials = () => {
     <section className="py-16 md:py-24 bg-farm-testimonial-bg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <span className="inline-block bg-farm-testimonial-card text-farm-dark text-sm font-medium px-5 py-2 rounded-full mb-4">
+          <span className="inline-block bg-farm-testimonial-card text-[#452102] text-sm font-medium px-5 py-2 rounded-full mb-4">
             Testimonial
           </span>
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-farm-dark">
+          <h2 className="font-signika text-3xl md:text-4xl lg:text-5xl font-regular text-[#452102] mb-4">
             What our customers say
           </h2>
         </div>
@@ -38,7 +38,7 @@ const Testimonials = () => {
               key={index}
               className="bg-[#FDF4E6] rounded-[20px] px-6 py-5 text-center relative"
             >
-              <div className="absolute -top-3 right-1">
+              <div className="absolute -top-3 right-0">
                 <img
                   src={quotationIcon}
                   alt="Quote icon"
@@ -49,7 +49,8 @@ const Testimonials = () => {
               <p className="text-farm-dark/80 text-sm leading-relaxed mb-4 mt-3">
                 "{t.quote}"
               </p>
-              <p className="font-sans font-semibold text-sm text-farm-dark">{t.name}</p>
+              
+                <p className="font-signika font-semibold text-sm text-[#452102]">{t.name}</p>
             </div>
           ))}
         </div>

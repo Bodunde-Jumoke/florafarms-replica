@@ -60,7 +60,7 @@ const VisionMissionValues = () => {
                 <img
                   src={card.image}
                   alt={card.imageAlt}
-                  className="w-full h-[260px] object-cover"
+                  className="w-full h-[260px] rounded-3xl object-cover"
                   loading="lazy"
                 />
                 {/* Icon positioned at bottom-right, overlapping */}

@@ -54,7 +54,7 @@ const ProductDetailLayout = ({
               </div>
             </div>
 
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mt-10 mb-6">
+            <h2 className="font-signika text-[#452102] text-3xl md:text-4xl font-bold text-foreground mt-10 mb-6">
               {title}
             </h2>
 

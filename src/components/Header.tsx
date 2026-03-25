@@ -20,8 +20,15 @@ const Header = () => {
       <div className="flex items-center justify-between h-16 md:h-20">
         <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center shrink-0">
+          {/* <Link to="/" className="flex items-center shrink-0">
             <img src={logo} alt="FloraFarms Poultry logo" className="h-14 w-14 md:h-16 md:w-16 rounded-lg object-cover" width={64} height={64} />
+          </Link> */}
+          <Link to="/" className="flex items-center shrink-0">
+            <img
+              src={logo}
+              alt="FloraFarms Poultry logo"
+              className="h-20 md:h-24 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Nav */}
@@ -95,11 +102,11 @@ const Header = () => {
             </Link>
           ))}
           {/* Call us - mobile */}
-          <a href="tel:+2348124564892" className="flex items-center gap-3 text-white px-4 py-3 mt-2">
+          <a href="tel:+2348067732200" className="flex items-center gap-3 text-white px-4 py-3 mt-2">
             <Phone className="h-5 w-5 text-farm-orange" />
             <div className="flex flex-col">
               <span className="text-xs text-white/70">Call us Now</span>
-              <span className="text-sm font-semibold">+234 8124564892</span>
+              <span className="text-sm font-semibold">+234 8067732200</span>
             </div>
           </a>
         </nav>

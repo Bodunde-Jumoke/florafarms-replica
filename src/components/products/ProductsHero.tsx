@@ -2,7 +2,7 @@ import heroBg from "@/assets/about-hero.png";
 
 const ProductsHero = () => {
   return (
-    <section className="relative bg-farm-green overflow-hidden min-h-[300px] md:min-h-[460px]">
+    <section className="relative  overflow-hidden min-h-[300px] md:min-h-[460px]">
       <div className="absolute inset-0">
         <img
           src={heroBg}
