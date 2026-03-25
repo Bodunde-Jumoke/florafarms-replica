@@ -51,7 +51,7 @@ const ProductionApproach = () => {
             <img src={industryImg} alt="PAN - Poultry Association of Nigeria" className="w-full h-full object-cover" />
           </div>
           <div>
-            <h3 className="font-signika text-[#452102] font-bold text-l text-foreground mb-2">
+            <h3 className="font-signika text-[#452102] font-bold text-xl text-foreground mb-2">
               Industry Alignment
             </h3>
             <p className="text-muted-foreground text-[#452102] text-sm leading-relaxed">

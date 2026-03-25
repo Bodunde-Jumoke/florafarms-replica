@@ -74,10 +74,10 @@ const ProductDetailLayout = ({
             {images.length >= 2 && (
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <div className="w-full sm:w-1/2 overflow-hidden rounded-lg">
-                  <img src={images[0].src} alt={images[0].alt} className="w-full h-[200px] md:h-[240px] object-cover" loading="lazy" decoding="async" />
+                  <img src={images[0].src} alt={images[0].alt} className="w-full h-[300px] md:h-[340px] object-cover" loading="lazy" decoding="async" />
                 </div>
                 <div className="w-full sm:w-1/2 overflow-hidden rounded-lg">
-                  <img src={images[1].src} alt={images[1].alt} className="w-full h-[200px] md:h-[240px] object-cover" loading="lazy" decoding="async" />
+                  <img src={images[1].src} alt={images[1].alt} className="w-full h-[300px] md:h-[340px] object-cover" loading="lazy" decoding="async" />
                 </div>
               </div>
             )}

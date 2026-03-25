@@ -18,17 +18,30 @@ const PointOfLay = () => {
         {
           title: "Point of Lay Production in Ijurin Ekiti, Nigeria",
           content: [
-            " Our point of lay birds are carefully reared pullets aged 16–18 weeks, prepared for transition into egg production. At this stage, birds have completed their primary vaccination schedules and have reached appropriate body weight and maturity levels."
-              
+            "Our point of lay birds are carefully reared pullets aged 16–18 weeks, prepared for transition into egg production. At this stage, birds have completed their primary vaccination schedules and have reached appropriate body weight and maturity levels.",
+            
             "These birds are suitable for farms seeking ready-to-lay stock managed under structured production systems.",
+
           ],
         },
         {
-          title: "Vaccination & Health Management",
+          title: "Development & Growth Monitoring",
           content: [
-            "All point of lay birds undergo complete vaccination programs before delivery. Health records are maintained and available upon request.",
+            " Throughout the rearing period, birds are fed stage-appropriate diets formulated to promote skeletal strength, feather quality, and reproductive development. Growth rates are monitored weekly to ensure uniformity within batches.",
+
+            "Lighting programs are introduced gradually to prepare birds for consistent egg production upon transfer to laying facilities.",
           ],
         },
+         {
+          title: "Health Vaccination & Program",
+          content: [
+            "Complete vaccination schedules are administered during the brooding and growing phases. Routine health checks ensure early detection of abnormalities and maintain flock stability.",
+            
+            "Controlled housing, sanitation practices, and restricted access protocols help maintain strong biosecurity standards.",
+
+          ],
+        },
+
       ]}
     />
   );

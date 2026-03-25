@@ -17,13 +17,13 @@ interface ProductSidebarProps {
 const ProductSidebar = ({ activeSlug }: ProductSidebarProps) => {
   return (
     <div className="border border-border p-6">
-      <h3 className="font-sans font-bold text-foreground text-base mb-4">Products</h3>
+      <h3 className="font-signika font-bold text-foreground text-base mb-4">Products</h3>
       <ul className="space-y-3">
         {products.map((product) => (
           <li key={product.slug}>
             <Link
               to={`/products/${product.slug}`}
-              className={`text-sm font-sans transition-colors ${
+              className={`text-sm font-signika transition-colors ${
                 activeSlug === product.slug
                   ? "text-farm-orange font-semibold"
                   : "text-muted-foreground hover:text-farm-orange"

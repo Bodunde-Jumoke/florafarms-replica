@@ -47,7 +47,7 @@ const VisionMissionValues = () => {
     <section className="py-16 md:py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="font-signika text-3xl md:text-4xl lg:text-5xl font-regular text-foreground">
+          <h2 className="font-signika text-[#452102] text-3xl md:text-4xl lg:text-5xl font-regular text-foreground">
             Vision, Mission and Core Values
           </h2>
         </div>
@@ -72,11 +72,11 @@ const VisionMissionValues = () => {
 
               {/* Text content inside card */}
               <div className="p-6 pt-8">
-                <h3 className="font-signika font-bold text-xl text-foreground mb-3">
+                <h3 className="font-signika text-[#452102] font-bold text-xl text-foreground mb-3">
                   {card.title}
                 </h3>
                 {card.type === "paragraph" ? (
-                  <p className="text-muted-foreground text-sm leading-relaxed">
+                  <p className="text-muted-foreground text-[#452102] text-sm leading-relaxed">
                     {card.content}
                   </p>
                 ) : (
