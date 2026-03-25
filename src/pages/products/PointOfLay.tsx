@@ -18,7 +18,9 @@ const PointOfLay = () => {
         {
           title: "Point of Lay Production in Ijurin Ekiti, Nigeria",
           content: [
-            "Commercial layers ready for egg production, fully vaccinated and professionally managed.",
+            " Our point of lay birds are carefully reared pullets aged 16–18 weeks, prepared for transition into egg production. At this stage, birds have completed their primary vaccination schedules and have reached appropriate body weight and maturity levels."
+              
+            "These birds are suitable for farms seeking ready-to-lay stock managed under structured production systems.",
           ],
         },
         {
