@@ -61,7 +61,7 @@ const ProductDetailLayout = ({
             <div className="border-l-4 border-farm-orange bg-card p-6 mb-8">
               {sections[0] && (
                 <>
-                  <h3 className="font-bold text-sm text-foreground mb-3">
+                  <h3 className="font-bold text-[#452102] text-sm text-foreground mb-3">
                     {sections[0].title}
                   </h3>
                   {sections[0].content.map((p, i) => (
