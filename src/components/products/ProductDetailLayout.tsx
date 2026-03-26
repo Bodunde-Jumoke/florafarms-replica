@@ -93,7 +93,7 @@ const ProductDetailLayout = ({
               ))}
             </div>
 
-            <a href="/contact" className="block w-full bg-farm-orange hover:bg-farm-orange-hover text-primary-foreground text-center py-3 rounded-full font-semibold transition-colors text-sm">
+            <a href="/contact" className="block w-full bg-farm-orange hover:bg-farm-orange-hover text-primary-foreground text-center py-3 rounded-full font-semibold transition-colors text-lg">
               Contact Us Today
             </a>
           </div>
