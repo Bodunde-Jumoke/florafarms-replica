@@ -46,7 +46,7 @@ const ProductionApproach = () => {
         </div>
 
         {/* Industry Alignment box */}
-        <div className="max-w-2xl mx-auto bg-card rounded-xl p-8 flex items-start gap-6">
+        <div className="max-w-2xl mx-auto bg-card rounded-xl p-8 flex flex-col sm:flex-row items-center sm:items-start gap-6 text-center sm:text-left">
           <div className="shrink-0 w-20 h-20 rounded-full overflow-hidden  flex items-center justify-center">
             <img src={industryImg} alt="PAN - Poultry Association of Nigeria" className="w-full h-full object-cover" />
           </div>

@@ -10,7 +10,7 @@ const WhoWeAre = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
 
           {/* Overlapping images */}
-          <div className="relative h-[400px] md:h-[500px]">
+          <div className="relative h-[400px] md:h-[500px] flex justify-center">
 
             {/* Orange background shape */}
             <div className="absolute top-10 left-6 w-[65%] h-[65%] bg-[#E6A061] rounded-2xl z-0"></div>
@@ -34,7 +34,7 @@ const WhoWeAre = () => {
           </div>
 
           {/* Text content */}
-          <div>
+          <div className="text-center lg:text-left">
             <span className="inline-block bg-white border/30 text-[#452102] text-md font-medium px-5 py-2 rounded-full mb-6">
               Who We Are
             </span>
@@ -50,8 +50,10 @@ const WhoWeAre = () => {
 
             {/* Two feature boxes with icons */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <div>
+              <div className="text-center sm:text-left">
+                <div className="flex justify-center sm:justify-start">
                 <img src={structureIcon} alt="Structured Production Systems icon" className="h-12 w-12 mb-3" />
+                </div>
                 <h3 className="font-semibold text-sm text-[#452102] mb-2">
                   Structured Production Systems
                 </h3>
@@ -59,8 +61,10 @@ const WhoWeAre = () => {
                   Clearly defined feeding schedules, monitored growth cycles, and organized housing units across all livestock categories.
                 </p>
               </div>
-              <div>
-                <img src={qualityIcon} alt="Commitment to Quality icon" className="h-12 w-12 mb-3" />
+              <div className="text-center sm:text-left">
+                <div className="flex justify-center sm:justify-start">
+                  <img src={qualityIcon} alt="Commitment to Quality icon" className="h-12 w-12 mb-3" />
+                </div>
                 <h3 className="font-semibold text-sm text-[#452102] mb-2">
                   Commitment to Quality & Biosecurity
                 </h3>

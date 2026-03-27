@@ -35,7 +35,7 @@ const WhatWeDo = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {products.map((product, index) => (
-            <article key={index} className="bg-card rounded-2xl overflow-hidden">
+            <article key={index} className="bg-card rounded-2xl overflow-hidden text-center sm:text-left ">
               <div className="aspect-[4/3] overflow-hidden p-5 rounded-2xl ">
                 <img
                   src={product.image}

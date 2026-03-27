@@ -40,25 +40,25 @@ const Contact = () => {
         <section className="py-16 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-              <div className="bg-card border border-border rounded-xl p-6 flex items-start gap-4">
+              <div className="bg-card border border-border rounded-xl p-6 flex flex-col sm:flex-row items-center sm:items-start gap-4 text-center sm:text-left">
                 <div className="w-12 h-12 rounded-full bg-farm-orange/15 flex items-center justify-center shrink-0">
                   <Mail className="h-6 w-6 text-farm-orange" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground text-base mb-2">Mail us 24/7</h3>
-                  <p className="text-muted-foreground text-sm">Florafarms@gmail.com</p>
+                  <p className="text-muted-foreground text-sm">Oluwasetemi@yahoo.co.uk</p>
                 </div>
               </div>
-              <div className="bg-card border border-border rounded-xl p-6 flex items-start gap-4">
+              <div className="bg-card border border-border rounded-xl p-6 flex flex-col sm:flex-row items-center sm:items-start gap-4 text-center sm:text-left">
                 <div className="w-12 h-12 rounded-full bg-farm-orange/15 flex items-center justify-center shrink-0">
                   <Phone className="h-6 w-6 text-farm-orange" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground text-base mb-2">Call us 24/7</h3>
-                  <p className="text-muted-foreground text-sm">+234 810235467</p>
+                  <p className="text-muted-foreground text-sm">+234 8067732200</p>
                 </div>
               </div>
-              <a href="https://maps.app.goo.gl/JMGrNnqfdSPqogsW6?g_st=iw" target="_blank" rel="noopener noreferrer" className="bg-card border border-border rounded-xl p-6 flex items-start gap-4 hover:shadow-md transition-shadow">
+              <a href="https://maps.app.goo.gl/JMGrNnqfdSPqogsW6?g_st=iw" target="_blank" rel="noopener noreferrer" className="bg-card border border-border rounded-xl p-6 flex flex-col sm:flex-row items-center sm:items-start gap-4 text-center sm:text-left">
                 <div className="w-12 h-12 rounded-full bg-farm-orange/15 flex items-center justify-center shrink-0">
                   <MapPin className="h-6 w-6 text-farm-orange" />
                 </div>
@@ -85,8 +85,8 @@ const Contact = () => {
               </div>
 
               <div className="p-8">
-                <p className="text-muted-foreground text-sm mb-2">Get to Contact Us</p>
-                <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-6">
+                <p className="text-muted-foreground text-sm mb-2 text-center lg:text-left">Get to Contact Us</p>
+                <h2 className="font-signika text-2xl md:text-3xl font-bold text-foreground mb-6 text-center lg:text-left">
                   Have any Questions?<br />Get in Touch
                 </h2>
 

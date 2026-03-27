@@ -6,7 +6,7 @@ const WhyChooseUs = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           {/* Image */}
-          <div className="rounded-2xl overflow-hidden">
+          <div className="rounded-2xl overflow-hidden flex justify-center">
             <img
               src={whyChooseImg}
               alt="FloraFarms team members standing together"
@@ -17,11 +17,11 @@ const WhyChooseUs = () => {
           </div>
 
           {/* Text */}
-          <div>
+          <div className="text-center lg:text-left">
             <span className="inline-block bg-white border/30 text-[#452102] text-sm font-medium px-5 py-2 rounded-full mb-6">
               Why Choose Us ?
             </span>
-            <h2 className="font-display text-[#452102] text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-6 leading-tight">
+            <h2 className="font-signika text-[#452102] text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-6 leading-tight">
               Experience the Best with Our Livestock and Poultry Farm.
             </h2>
             <p className="text-muted-foreground text-[#452102] text-sm md:text-base leading-relaxed mb-8">

@@ -6,10 +6,10 @@ const Footer = () => {
     <footer id="contact" className="bg-farm-footer-bg text-farm-dark">
       <div className="border-t border-farm-dark/10" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center md:text-left">
           {/* Brand */}
           <div>
-            <div className="mb-4">
+             <div className="mb-4 flex justify-center md:justify-start">
               <img src={logo} alt="FloraFarms Poultry logo" className="h-20 w-20 rounded-lg object-cover" />
             </div>
             <p className="text-farm-dark/70 text-sm leading-relaxed">
@@ -54,19 +54,19 @@ const Footer = () => {
           <div>
             <h3 className="font-sans font-semibold text-base mb-5">Get in Touch</h3>
             <ul className="space-y-4">
-              <li className="flex items-start gap-3">
+              <li className="flex items-start gap-3 justify-center md:justify-start">
                 <MapPin className="h-5 w-5 text-farm-orange shrink-0 mt-0.5" />
                 <span className="text-farm-dark text-sm">Behind Ave Maria Villa, Ijurin Ekiti</span>
               </li>
-              <li className="flex items-start gap-3">
+              <li className="flex items-start gap-3 justify-center md:justify-start">
                 <Facebook className="h-5 w-5 text-farm-orange shrink-0 mt-0.5" />
                 <span className="text-farm-dark text-sm">Flora Farms</span>
               </li>
-              <li className="flex items-start gap-3">
+              <li className="flex items-start gap-3 justify-center md:justify-start">
                 <Phone className="h-5 w-5 text-farm-orange shrink-0 mt-0.5" />
                 <span className="text-farm-dark text-sm">080 6673 2200</span>
               </li>
-              <li className="flex items-start gap-3">
+              <li className="flex items-start gap-3 justify-center md:justify-start">
                 <Mail className="h-5 w-5 text-farm-orange shrink-0 mt-0.5" />
                 <span className="text-farm-dark text-sm">Florafarmsijurin@gmail.com</span>
               </li>
@@ -80,6 +80,9 @@ const Footer = () => {
           </p>
           <p className="text-farm-dark/60 text-sm">
             designed by COVY
+          </p>
+          <p className="text-farm-dark/60 text-sm">
+            developed by JumKEdge Technologies (JET)
           </p>
         </div>
       </div>

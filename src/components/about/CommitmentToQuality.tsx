@@ -6,7 +6,7 @@ const CommitmentToQuality = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 items-start" style={{ gap: '64px' }}>
           {/* Image */}
-          <div className="rounded-3xl overflow-hidden">
+          <div className="rounded-3xl overflow-hidden flex justify-center">
             <img
               src={gallery1}
               alt="Close-up of a healthy hen with eggs on the farm"
@@ -16,7 +16,7 @@ const CommitmentToQuality = () => {
           </div>
 
           {/* Content */}
-          <div>
+          <div className="text-center lg:text-left">
             <h2 className="font-signika text-white text-3xl md:text-4xl font-bold text-foreground mb-4 leading-tight">
               Our Commitment to Quality
             </h2>

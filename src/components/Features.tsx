@@ -42,10 +42,10 @@ const Features = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="rounded-xl px-6 py-5"
+              className="rounded-xl px-6 py-5 text-center sm:text-left"
               style={{ backgroundColor: feature.bg }}
             >
-              <div className="mb-4">
+              <div className="mb-4 flex justify-center sm:justify-start">
                 <img src={feature.icon} alt={feature.title} className="w-10 h-10 object-contain" />
               </div>
               <h3 className={`font-sans font-semibold text-base mb-3 ${
