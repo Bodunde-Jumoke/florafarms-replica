@@ -34,33 +34,60 @@ const WhatWeDo = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {products.map((product, index) => (
-            <article key={index} className="bg-card rounded-2xl overflow-hidden text-center sm:text-left ">
-              <div className="aspect-[4/3] overflow-hidden p-5 rounded-2xl ">
-                <img
-                  src={product.image}
-                  alt={product.alt}
-                  className="w-full h-full object-cover rounded-2xl hover:scale-105 transition-transform duration-300"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-              <div className="p-5">
-                <h3 className="font-semibold text-foreground text-base mb-2">
-                  {product.name}
-                </h3>
-                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-                  {product.description}
-                </p>
-                <a
-                  href={`/products/${product.slug === "exotic-birds-2" ? "exotic-birds" : product.slug}`}
-                  className="inline-block text-sm font-semibold text-farm-orange border border-farm-orange px-5 py-2 rounded-full hover:bg-farm-orange hover:text-primary-foreground transition-colors"
-                >
-                  View More
-                </a>
-              </div>
-            </article>
-          ))}
+          
+     {products.map((product, index) => {
+  const isDuck = product.slug === "exotic-birds";
+
+  return (
+    <article
+      key={index}
+      className={`rounded-2xl overflow-hidden flex flex-col h-full ${
+        isDuck ? "" : "bg-card"
+      }`}
+    >
+      {/* Image */}
+      <div
+        className={`overflow-hidden ${
+          isDuck ? "flex-1 p-5" : "aspect-[4/3] p-5"
+        }`}
+      >
+        <img
+          src={product.image}
+          alt={product.alt}
+          className="w-full h-full object-cover rounded-2xl hover:scale-105 transition-transform duration-300"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+
+      {/* Content (only for normal cards) */}
+      {!isDuck && (
+        <div className="p-5 flex flex-col">
+          <h3 className="font-semibold text-foreground text-base mb-2">
+            {product.name}
+          </h3>
+
+          <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+            {product.description}
+          </p>
+
+          {/* FIX: prevent stretching */}
+          <a
+            href={`/products/${
+              product.slug === "exotic-birds-2"
+                ? "exotic-birds"
+                : product.slug
+            }`}
+            className="inline-block w-fit text-sm font-semibold text-farm-orange border border-farm-orange px-5 py-2 rounded-full hover:bg-farm-orange hover:text-primary-foreground transition-colors"
+          >
+            View More
+          </a>
+        </div>
+      )}
+    </article>
+  );
+})}
+
         </div>
       </div>
     </section>
