@@ -76,7 +76,7 @@ const Footer = () => {
 
         <div className="border-t border-farm-dark/10 mt-10 pt-6 text-center">
           <p className="text-farm-dark/60 text-sm">
-            © 2023 All rights Reserved, Flora Frams
+            © 2026 All rights Reserved, Flora Frams
           </p>
           <p className="text-farm-dark/60 text-sm">
             designed by COVY
